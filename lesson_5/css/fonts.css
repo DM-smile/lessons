@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500&display=swap");
+
+@font-face {
+   font-family: "Donpoligrafbum";
+   src: 
+      url("../fonts/Donpoligrafbum-Bold.woff2"),
+      url("../fonts/Donpoligrafbum-Bold.woff");
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face{
+   font-family: "ArefRuqaaInk";
+   src:
+      url("../fonts/ArefRuqaaInk-Regular.woff2"),
+      url("../fonts/ArefRuqaaInk-Regular.woff");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face{
+   font-family: "ArefRuqaaInk";
+   src:
+      url("../fonts/ArefRuqaaInk-Bold.woff2"),
+      url("../fonts/ArefRuqaaInk-Bold.woff");
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face{
+   font-family: "Nokora";
+   src:
+      url("../fonts/Nokora-Black.woff2"),
+      url("../fonts/Nokora-Black.woff");
+   font-weight: 900;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face{
+   font-family: "Nokora";
+   src:
+      url("../fonts/Nokora-Bold.woff2"),
+      url("../fonts/Nokora-Bold.woff");
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face{
+   font-family: "Nokora";
+   src:
+      url("../fonts/Nokora-Light.woff2"),
+      url("../fonts/Nokora-Light.woff");
+   font-weight: 300;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face{
+   font-family: "Nokora";
+   src:
+      url("../fonts/Nokora-Regular.woff2"),
+      url("../fonts/Nokora-Regular.woff");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face{
+   font-family: "Nokora";
+   src:
+      url("../fonts/Nokora-Thin.woff2"),
+      url("../fonts/Nokora-Thin.woff");
+   font-weight: 100;
+   font-style: normal;
+   font-display: swap;
+}
