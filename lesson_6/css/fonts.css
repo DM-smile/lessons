@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular&display=swap");
+@font-face {
+   font-family: "BrahmsGotischCyr";
+   src: url("../fonts/BrahmsGotischCyr.woff2"), url("../fonts/BrahmsGotischCyr.woff");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
