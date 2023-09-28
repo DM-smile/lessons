@@ -9,6 +9,7 @@ body {
    font-style: normal;
    font-weight: 400;
    font-size: 20px;
+   padding-top: 3%;
 }
 
 h1,
@@ -17,7 +18,7 @@ h2 {
    font-weight: 400;
    font-size: 100px;
    text-align: center;
-   margin: 2% 0 5% 0;
+   margin-bottom: 5%;
    color: #8b53eb;
    text-shadow:
       4px 4px 5px #0e333d,
@@ -140,8 +141,11 @@ h2 {
    margin-right: 13px;
 }
 
-ul li ~ li {
-   margin-top: 35px;
+ul li {
+   margin-bottom: 35px;
+}
+ul li + li + li{
+   margin-bottom: 0;
 }
 
 li {
