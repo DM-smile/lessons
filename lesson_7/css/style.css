@@ -601,7 +601,7 @@ footer {
 
 .title {
    margin-bottom: 8px;
-   max-width: 127px;
+   width: 127px;
    height: 21px;
 }
 .column-1 p {
