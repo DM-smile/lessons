@@ -367,6 +367,7 @@ header {
    width: 614px;
    background: url("../img/fashion-background-1.png") center / cover no-repeat;
    display: inline-block;
+   border-radius: 13px 0 0 13px;
    padding-top: 183px;
    background-size: cover;
    padding-bottom: 138.5px;
@@ -374,6 +375,7 @@ header {
 .fashion .second-block {
    width: 626px;
    height: 640px;
+   border-radius: 0 13px 13px 0;
    background: url("../img/fashion-background-2.png") center / cover no-repeat;
    display: inline-block;
 }
