@@ -275,22 +275,22 @@ header {
 }
 
 .content-block-1-background {
-   background: url("../img/latest-projects-photo-1.jpg") 0 0 / cover no-repeat;
+   background: url("../img/latest-projects-photo-1.jpg") center / cover no-repeat;
 }
 .content-block-2-background {
-   background: url("../img/latest-projects-photo-2.jpg") 0 0 / cover no-repeat;
+   background: url("../img/latest-projects-photo-2.jpg") center / cover no-repeat;
 }
 .content-block-3-background {
-   background: url("../img/latest-projects-photo-3.jpg") 0 0 / cover no-repeat;
+   background: url("../img/latest-projects-photo-3.jpg") center / cover no-repeat;
 }
 .content-block-4-background {
-   background: url("../img/latest-projects-photo-4.jpg") 0 0 / cover no-repeat;
+   background: url("../img/latest-projects-photo-4.jpg") center / cover no-repeat;
 }
 .content-block-5-background {
-   background: url("../img/latest-projects-photo-5.jpg") 0 0 / cover no-repeat;
+   background: url("../img/latest-projects-photo-5.jpg") center / cover no-repeat;
 }
 .content-block-6-background {
-   background: url("../img/latest-projects-photo-6.jpg") no-repeat;
+   background: url("../img/latest-projects-photo-6.jpg") center / cover no-repeat;
 }
 
 .first-block-of-row,
@@ -365,7 +365,7 @@ header {
 .fashion .first-block {
    vertical-align: top;
    width: 614px;
-   background: url("../img/fashion-background-1.png") 0 0 / cover no-repeat;
+   background: url("../img/fashion-background-1.png") center / cover no-repeat;
    display: inline-block;
    padding-top: 183px;
    background-size: cover;
@@ -374,7 +374,7 @@ header {
 .fashion .second-block {
    width: 626px;
    height: 640px;
-   background: url("../img/fashion-background-2.png") 0 0 / cover no-repeat;
+   background: url("../img/fashion-background-2.png") center / cover no-repeat;
    display: inline-block;
 }
 
