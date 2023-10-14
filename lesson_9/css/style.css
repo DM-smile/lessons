@@ -1,0 +1,411 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+   background: rgb(250, 174, 126);
+   background: linear-gradient(
+      90deg,
+      rgba(250, 174, 126, 1) 0%,
+      rgba(198, 198, 198, 1) 3%,
+      rgba(255, 255, 255, 0) 6%,
+      rgba(255, 255, 255, 0) 94%,
+      rgba(198, 198, 198, 1) 97%,
+      rgba(250, 174, 126, 1) 100%
+   );
+}
+
+header {
+   font-family: "The Resto";
+   background: rgb(150, 172, 225);
+   background: radial-gradient(circle, rgba(150, 172, 225, 1) 0%, rgba(72, 106, 97, 1) 90%);
+   font-weight: 400;
+   text-align: center;
+   font-size: 100px;
+   padding: 3% 0;
+   color: rgb(0, 0, 0);
+   text-shadow: 2px 2px 3px red;
+   margin-bottom: 10%;
+   border-radius: 0 0 50% 50%;
+}
+header:hover {
+   background: rgb(110, 147, 233);
+   background: radial-gradient(circle, rgb(85, 123, 213) 0%, rgba(72, 106, 97, 1) 90%);
+}
+
+/* !=========consulting=========== */
+.consulting {
+   color: #7d7d7d;
+   font-family: "Inter";
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 1.46;
+   max-width: 692px;
+   margin: 0 auto 10%;
+}
+.consulting::before {
+   content: "";
+   background: url("../img/consulting-background-main.png") center / cover no-repeat;
+   width: 692px;
+   height: 470px;
+   margin-bottom: 24px;
+}
+/* !header */
+.consulting > div:first-child {
+   margin-bottom: 40px;
+}
+/* !h2 - Why Us For International Business Management Consulting! */
+.consulting .consulting-header h2:first-of-type,
+.consulting-footer h2:first-child {
+   color: #37393f;
+   font-family: "Poppins";
+   font-size: 30px;
+   font-weight: 500; /* по макету "semi bold", але мені здається тут "medium"*/
+   line-height: 1.27;
+   margin-bottom: 3px;
+   padding-bottom: 9px; /* мені здається тут має бути падінг */
+}
+/* !paragraph-1 */
+.consulting .consulting-header p:not(:last-child) {
+   margin-bottom: 42px;
+}
+.consulting .consulting-header h3:first-of-type {
+   color: #6b77e5;
+   font-family: "Poppins";
+   font-weight: 500; /* по макету "semi bold", але мені здається тут "medium"*/
+   font-size: 20px;
+   line-height: 1.27;
+   margin-bottom: 12px;
+}
+/* !consulting-body */
+.consulting > div:nth-child(2) {
+   font-size: 0;
+   margin-bottom: 50px;
+}
+/* !body-content */
+.consulting-body div:last-child {
+   max-width: 332px;
+   display: inline-block;
+   vertical-align: top;
+}
+
+.consulting-body .body-content h4:first-of-type {
+   color: #37393f;
+   font-family: "Poppins";
+   font-size: 25px;
+   font-weight: 500; /* по макету "semi bold", але мені здається тут "medium"*/
+   line-height: 1.27;
+   margin-bottom: 20px;
+}
+.consulting-body .body-content h5:first-of-type {
+   color: #40ddb6;
+   font-family: "Poppins";
+   font-size: 20px;
+   font-weight: 500; /* по макету "semi bold", але мені здається тут "medium"*/
+   line-height: 1.27;
+   margin-bottom: 30px;
+}
+.consulting-body .body-content li {
+   font-size: 18px;
+   color: #7d7d7d;
+   line-height: normal;
+}
+.consulting-body .body-content li:not(:last-child) {
+   margin-bottom: 30px;
+}
+
+.consulting-footer h2:first-child {
+   margin-bottom: 4px;
+   padding-bottom: 7px; /* мені здається тут має бути падінг */
+}
+.consulting-footer p:not(:last-child) {
+   margin-bottom: 42px;
+}
+
+/* !consulting-background-block */
+.consulting-body div:first-child {
+   display: inline-block;
+   background: url("../img/consulting-background.svg") center / contain no-repeat;  /* нехай це зображення буде бекграундом) */
+   width: 331px;
+   height: 266px;
+   vertical-align: top;
+   margin-right: 29px;
+}
+
+.consulting-body .body-content li::before {
+   content: "";
+   background: url("../img/consulting_list-icon.svg") center / contain no-repeat;
+   width: 27px;
+   height: 27px;
+   margin-right: 8px;
+   margin-top: -3px;
+   display: inline-block;
+   vertical-align: middle;
+   border-radius: 50%;
+}
+
+/* !=========consulting end=========== */
+
+/* !===========Whitecollar============ */
+.whitecollar {
+   font-family: "Inter";
+   font-weight: 400;
+   font-size: 18px;
+   color: #7d7d7d;
+   line-height: 1.46;
+   max-width: 673px;
+   margin: 0 auto 10%;
+}
+.whitecollar-header {
+   max-width: 413px;
+   margin-bottom: 10px;
+}
+.whitecollar h2 {
+   color: #37393f;
+   font-weight: 500;
+   line-height: normal;
+   margin-bottom: 16px;
+}
+.whitecollar h2::before {
+   content: "";
+   background: url("../img/icon.png") center / cover no-repeat;
+   width: 12px;
+   height: 12px;
+   margin-right: 6px;
+}
+.whitecollar h3 {
+   color: #37393f;
+   font-family: "Poppins";
+   font-size: 40px;
+   font-weight: 700;
+   line-height: 1.21;
+}
+.whitecollar p:not(:last-of-type) {
+   margin-bottom: 16px;
+}
+.whitecollar .content-text,
+.whitecollar-body {
+   margin-bottom: 48px;
+}
+.whitecollar li {
+   padding: 28px 41px 28px 38px;
+   border: 1px solid #c9c9c9;
+   transition: all 0.4s;
+}
+.whitecollar li:hover {
+   background-color: rgb(241, 241, 241);
+}
+.whitecollar li:not(:last-child) {
+   margin-bottom: 31px;
+}
+.whitecollar h4 {
+   color: #37393f;
+   font-family: "Poppins";
+   font-size: 20px;
+   font-weight: 600;
+   line-height: normal;
+   margin-bottom: 12px;
+}
+.whitecollar h4::before {
+   content: "";
+   background: url("../img/consulting_list-icon.svg") center / contain no-repeat;
+   width: 27px;
+   height: 27px;
+   vertical-align: top;
+   margin-right: 19px;
+   border-radius: 50%;
+}
+.whitecollar .content-block p {
+   padding-left: 46px;
+}
+.whitecollar-button a {
+   padding: 21px 35px 22px 35px;
+   background-color: #6b77e5;
+   display: inline-block;
+   color: #fff;
+   text-align: center;
+   font-weight: 600;
+   line-height: normal;
+   text-transform: capitalize;
+}
+.whitecollar-button a:hover {
+   background-color: #4756d8;
+}
+.whitecollar-button a:active {
+   box-shadow: 0 0 30px #6b77e5;
+}
+
+/* !============Whitecollar end============= */
+/* !==============Work Process============ */
+.work-process {
+   max-width: 1220px;
+   font-family: "Inter";
+   color: #37393f;
+   font-size: 0;
+   font-weight: 400;
+   line-height: 1.46;
+   text-align: center;
+   margin: 0 auto 10%;
+}
+
+.work-process h2 {
+   font-size: 18px;
+   font-weight: 500;
+   line-height: normal;
+   margin-bottom: 16px;
+}
+.work-process .block {
+   max-width: 386px;
+   display: inline-block;
+   padding: 58px 43px;
+   background-color: #f7f6f6;
+   transition: all 0.4s;
+}
+.work-process .block:hover {
+   background-color: #e3e3e3;
+}
+.work-process .block:not(:last-child) {
+   margin-right: 31px;
+}
+.work-process h3 {
+   text-align: center;
+   font-family: "Poppins";
+   font-size: 40px;
+   font-weight: 700;
+   line-height: 1.21;
+}
+.work-process-header {
+   margin-bottom: 77px;
+}
+.work-process h4 {
+   font-family: "Poppins";
+   font-size: 25px;
+   font-weight: 600;
+   line-height: 1.27;
+   margin-bottom: 16px;
+}
+.work-process p {
+   font-size: 18px;
+   color: #7d7d7d;
+   margin-bottom: 37px;
+}
+.work-process a {
+   font-size: 18px;
+   color: #6b77e5;
+   font-weight: 600;
+   text-transform: capitalize;
+   border-bottom: 2px solid transparent;
+}
+.work-process a:hover {
+   border-bottom: 2px solid #6b77e5;
+}
+.work-process h2::before {
+   content: "";
+   background: url("../img/icon.png") center / contain no-repeat;
+   width: 12px;
+   height: 12px;
+   margin-right: 6px;
+}
+.work-process .block.first::before {
+   content: "";
+   background: url("../img/work-process_icon-block-1.svg") center / contain no-repeat;
+   border-radius: 50%;
+   width: 72px;
+   height: 72px;
+   margin-bottom: 22px;
+   margin-top: -94px;
+}
+.work-process .block.second::before {
+   content: "";
+   background: url("../img/work-process_icon-block-2.svg") center / contain no-repeat;
+   border-radius: 50%;
+   width: 72px;
+   height: 72px;
+   margin-bottom: 22px;
+   margin-top: -94px;
+}
+.work-process .block.three::before {
+   content: "";
+   background: url("../img/work-process_icon-block-3.svg") center / contain no-repeat;
+   border-radius: 50%;
+   width: 72px;
+   height: 72px;
+   margin-bottom: 22px;
+   margin-top: -94px;
+}
+/* !==============Work Process end============ */
+/* !==============jewels============ */
+.jewels {
+   max-width: 1214px;
+   font-family: "Cormorant Infant";
+   color: #000;
+   font-size: 0;
+   font-weight: 600; /* в макеті 700, але мені здається тут більше схоже на 600 */
+   line-height: 1.4;
+   margin: 0 auto 10%;
+}
+.jewels .column {
+   display: inline-block;
+   vertical-align: top;
+}
+.jewels-photo {
+   border: 1px solid #000;
+   margin-bottom: 34px;
+}
+.jewels img {
+   max-width: 334px;
+   margin: 9px -10px -9px 10px;
+   transition: all 0.1s;
+}
+.jewels img:hover {
+   box-shadow: 0 0 10px black;
+}
+.jewels img:active {
+   box-shadow: 0 0 50px rgb(126, 124, 124);
+}
+.jewels .text a{
+   transition: all 0.1s;
+}
+.jewels .text a:active {
+   text-shadow: 0 0 6px black;
+   color: #fff;
+}
+.jewels .column.first {
+   max-width: 488px;
+   font-size: 60px;
+   line-height: 1.15;
+   padding-top: 166px;
+}
+.jewels .column.second,
+.jewels .column.three {
+   width: 334px;
+   font-size: 24px;
+}
+.jewels .column.second {
+   margin-right: 45px;
+   padding-top: 32px;
+}
+.jewels h3 {
+   font-size: 46px;
+   line-height: 1.13;
+   margin-bottom: 31px;
+}
+.jewels h3::before {
+   content: "#02";
+   width: 100%;
+}
+.jewels .text a:hover {
+   text-decoration: underline;
+}
+.jewels .text p {
+   margin-bottom: 4px;
+}
+
+.jewels h2::after {
+   content: "";
+   display: block;
+   height: 3px;
+   max-width: 304px;
+   background-color: #78473b;
+   margin-top: 13px;
+}
+/* !==============jewels end============ */
