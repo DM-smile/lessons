@@ -124,7 +124,7 @@ header:hover {
 /* !consulting-background-block */
 .consulting-body div:first-child {
    display: inline-block;
-   background: url("../img/consulting-background.svg") center / contain no-repeat;  /* нехай це зображення буде бекграундом) */
+   background: url("../img/consulting-background.svg") center / contain no-repeat; /* нехай це зображення буде бекграундом) */
    width: 331px;
    height: 266px;
    vertical-align: top;
@@ -246,7 +246,9 @@ header:hover {
    text-align: center;
    margin: 0 auto 10%;
 }
-
+.work-process .content {
+   padding-top: 36px;
+}
 .work-process h2 {
    font-size: 18px;
    font-weight: 500;
@@ -274,7 +276,7 @@ header:hover {
    line-height: 1.21;
 }
 .work-process-header {
-   margin-bottom: 77px;
+   margin-bottom: 41px;
 }
 .work-process h4 {
    font-family: "Poppins";
@@ -362,7 +364,7 @@ header:hover {
 .jewels img:active {
    box-shadow: 0 0 50px rgb(126, 124, 124);
 }
-.jewels .text a{
+.jewels .text a {
    transition: all 0.1s;
 }
 .jewels .text a:active {
@@ -409,3 +411,222 @@ header:hover {
    margin-top: 13px;
 }
 /* !==============jewels end============ */
+/* !==============practice============== */
+
+.practice .container {
+   border: 5px solid rgb(59, 30, 30);
+   border-radius: 30px;
+   max-width: 1214px;
+   margin: 0 auto;
+   text-align: center;
+   margin-bottom: 6%;
+   background-color: #4756d851;
+}
+.practice .container-item {
+   border: 3px solid aqua;
+   display: inline-block;
+   vertical-align: top;
+   font-size: 0;
+   width: 300px;
+   height: 100px;
+   margin: 1% 2%;
+   font-size: 30px;
+   padding-top: 2.5%;
+   background-color: #40ddb6;
+}
+.practice .container-big {
+   width: 1100px;
+   height: 100px;
+   border: 3px solid aqua;
+   display: inline-block;
+   vertical-align: top;
+   font-size: 0;
+   margin: 1% 2%;
+   font-size: 50px;
+   padding-top: 2%;
+   background-color: #40ddb6;
+}
+.practice .container .hover-color:hover {
+   background-color: green;
+   color: white;
+}
+.practice .container .hover-image:hover {
+   background: url("../img/consulting-background.svg");
+}
+.practice .container .active:active {
+   background-color: green;
+}
+.practice .visited a:visited {
+   color: red;
+}
+.practice #container-big {
+   text-align: center;
+   display: none;
+}
+.practice #container-big:target {
+   display: inline-block;
+}
+
+/* ========================================== */
+.game-1 {
+   margin-bottom: 8%;
+   padding-top: 30px;
+   text-align: center;
+   margin: 0 auto;
+   width: 1000px;
+   height: 700px;
+   background: url("../img/grass.jpeg") center / cover no-repeat;
+}
+.game-1 .body {
+   display: inline-block;
+   width: 120px;
+   height: 120px;
+   border-radius: 50%;
+   background: url("../img/homyak.jpeg") center / cover no-repeat;
+   transition: all 0.2s;
+   margin-left: 25px;
+}
+.game-1 .body a{
+   width: 120px;
+}
+.game-1 .body:hover {
+   background: url("../img/homyak-none.jpeg") center / cover no-repeat;
+}
+.game-1 h2 {
+   color: rgb(35, 28, 28);
+   font-size: 70px;
+   text-shadow: 2px 2px 3px red;
+   margin-bottom: 160px;
+}
+/* ========================================== */
+.game-2 {
+   font-size: 0;
+   margin: 0 auto;
+   width: 1000px;
+   height: 580px;
+   background: url("../img/nora.png") center / 30px 30px repeat;
+   display: none;
+}
+.game-2 .line {
+   background: url("../img/kopat.png") center / 30px 30px repeat;
+}
+.game-2 .line-start {
+   background: url("../img/kopat.png") center / 30px 30px repeat;
+   width: 150px;
+   height: 100px;
+   text-align: center;
+   font-size: 40px;
+   padding-top: 20px;
+   color: red;
+}
+.game-2 .line-1 {
+   display: inline-block;
+   width: 900px;
+   height: 60px;
+   vertical-align: top;
+}
+.game-2 .line-2 {
+   display: inline-block;
+   width: 60px;
+   height: 60px;
+}
+.game-2 .block-1 {
+   display: inline-block;
+   width: 900px;
+   height: 60px;
+}
+.game-2 .line-3 {
+   display: inline-block;
+   width: 60px;
+   height: 160px;
+}
+.game-2 .block-2 {
+   display: inline-block;
+   width: 60px;
+   height: 60px;
+}
+.game-2 .line-4 {
+   display: inline-block;
+   width: 900px;
+   height: 60px;
+}
+.game-2 .block-3 {
+   display: inline-block;
+   width: 60px;
+   height: 60px;
+}
+.game-2 .line-5 {
+   display: inline-block;
+   width: 30px;
+   height: 200px;
+}
+.game-2 .line-6 {
+   display: inline-block;
+   width: 600px;
+   height: 30px;
+}
+.game-2 .line-7 {
+   display: inline-block;
+   width: 180px;
+   height: 90px;
+}
+.game-2 .line-finish {
+   display: inline-block;
+   width: 90px;
+   height: 90px;
+   border-radius: 0 50% 50% 0;
+   background: url("../img/homyak_2.png") center / cover no-repeat;
+}
+.game-2 .victory {
+   background: url("../img/homyak_3.jpg") center / cover no-repeat;
+   width: 100%;
+   height: 100%;
+}
+.game-2 .line {
+   visibility: hidden;
+}
+
+.line-start:hover ~ .line-1,
+.line-1:hover {
+   visibility: visible;
+}
+.line-1:hover ~ .line-2,
+.line-2:hover {
+   visibility: visible;
+}
+.line-2:hover ~ .line-3,
+.line-3:hover {
+   visibility: visible;
+}
+.line-3:hover ~ .line-4,
+.line-4:hover {
+   visibility: visible;
+}
+.line-4:hover ~ .line-5,
+.line-5:hover {
+   visibility: visible;
+}
+.line-5:hover ~ .line-6,
+.line-6:hover {
+   visibility: visible;
+}
+.line-6:hover ~ .line-7,
+.line-7:hover {
+   visibility: visible;
+}
+.line-7:hover ~ .line-finish,
+.line-finish:hover {
+   visibility: visible;
+}
+.line-finish:hover ~ .victory,
+.victory:hover {
+   visibility: visible;
+}
+.line-finish:hover {
+   background: none;
+}
+/* =========start=========*/
+#game:target {
+   display: block;
+}
+/* !=========end============ */
