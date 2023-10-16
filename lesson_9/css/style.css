@@ -341,7 +341,7 @@ header:hover {
    font-family: "Cormorant Infant";
    color: #000;
    font-size: 0;
-   font-weight: 600; /* в макеті 700, але мені здається тут більше схоже на 600 */
+   font-weight: 700;
    line-height: 1.4;
    margin: 0 auto 10%;
 }
