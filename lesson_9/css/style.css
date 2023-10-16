@@ -59,7 +59,7 @@ header:hover {
    color: #37393f;
    font-family: "Poppins";
    font-size: 30px;
-   font-weight: 500; /* по макету "semi bold", але мені здається тут "medium"*/
+   font-weight: 600;
    line-height: 1.27;
    margin-bottom: 3px;
    padding-bottom: 9px; /* мені здається тут має бути падінг */
@@ -71,7 +71,7 @@ header:hover {
 .consulting .consulting-header h3:first-of-type {
    color: #6b77e5;
    font-family: "Poppins";
-   font-weight: 500; /* по макету "semi bold", але мені здається тут "medium"*/
+   font-weight: 600;
    font-size: 20px;
    line-height: 1.27;
    margin-bottom: 12px;
@@ -92,7 +92,7 @@ header:hover {
    color: #37393f;
    font-family: "Poppins";
    font-size: 25px;
-   font-weight: 500; /* по макету "semi bold", але мені здається тут "medium"*/
+   font-weight: 600;
    line-height: 1.27;
    margin-bottom: 20px;
 }
@@ -100,7 +100,7 @@ header:hover {
    color: #40ddb6;
    font-family: "Poppins";
    font-size: 20px;
-   font-weight: 500; /* по макету "semi bold", але мені здається тут "medium"*/
+   font-weight: 600;
    line-height: 1.27;
    margin-bottom: 30px;
 }
