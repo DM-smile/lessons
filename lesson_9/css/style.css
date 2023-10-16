@@ -62,7 +62,7 @@ header:hover {
    font-weight: 600;
    line-height: 1.27;
    margin-bottom: 3px;
-   padding-bottom: 9px;
+   padding-bottom: 9px; /* мені здається тут має бути падінг */
 }
 /* !paragraph-1 */
 .consulting .consulting-header p:not(:last-child) {
