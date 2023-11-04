@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular&display=swap");
+@font-face {
+   font-family: "The Resto";
+   src: url("../fonts/TheResto-Regular.woff2"), url("../fonts/TheResto-Regular.woff");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
