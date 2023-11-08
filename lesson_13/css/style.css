@@ -1,0 +1,530 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+   background: rgb(250, 174, 126);
+   background: linear-gradient(
+      90deg,
+      rgba(250, 174, 126, 1) 0%,
+      rgba(198, 198, 198, 1) 3%,
+      rgba(255, 255, 255, 0) 6%,
+      rgba(255, 255, 255, 0) 94%,
+      rgba(198, 198, 198, 1) 97%,
+      rgba(250, 174, 126, 1) 100%
+   );
+}
+
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+}
+header {
+   font-family: "The Resto";
+   background: rgb(150, 172, 225);
+   background: radial-gradient(circle, rgba(150, 172, 225, 1) 0%, rgba(72, 106, 97, 1) 90%);
+   font-weight: 400;
+   text-align: center;
+   font-size: 100px;
+   padding: 3% 0;
+   color: rgb(0, 0, 0);
+   text-shadow: 2px 2px 3px red;
+   margin-bottom: 6%;
+   border-radius: 0 0 50% 50%;
+}
+header:hover {
+   background: rgb(110, 147, 233);
+   background: radial-gradient(circle, rgb(85, 123, 213) 0%, rgba(72, 106, 97, 1) 90%);
+}
+footer p {
+   height: 50px;
+   font-size: 30px;
+   padding-top: 13px;
+   text-align: center;
+   display: block;
+   background: rgb(150, 172, 225);
+   background: radial-gradient(circle, rgba(150, 172, 225, 1) 0%, rgba(72, 106, 97, 1) 90%);
+}
+main {
+   text-align: center;
+}
+/* ==================================================================== */
+.line-top {
+   width: 100%;
+   height: 5px;
+   background-color: red;
+   border-radius: 3px;
+   margin-bottom: 3%;
+}
+.line-bottom {
+   width: 100%;
+   height: 5px;
+   background-color: red;
+   border-radius: 3px;
+}
+.practice__carts {
+   max-width: 75%;
+   margin: 0 auto;
+   background-color: blanchedalmond;
+   border-radius: 30px;
+   padding: 3%;
+   font-size: 0;
+   text-align: center;
+}
+.cards__wrapper {
+   outline: 3px solid rgb(29, 25, 25);
+   display: inline-block;
+   background-color: white;
+   padding: 5px;
+   border-radius: 10px;
+   margin-bottom: 3%;
+}
+.card {
+   width: 150px;
+   height: 170px;
+   transition: all 0.5s;
+   background-color: rgb(202, 156, 246);
+   display: inline-block;
+   font-size: 30px;
+   text-align: center;
+   padding-top: 55px;
+   vertical-align: top;
+   border-radius: 10px;
+}
+.cards__wrapper:not(:last-child) {
+   margin-right: 20px;
+}
+.card--translate:hover {
+   transform: translate(10px, 20px);
+}
+.card--scale-plus:hover {
+   transform: scale(1.3);
+}
+.card--scale-minusplus:hover {
+   transform: scale(0.7, 1.3);
+}
+.card--scale-minus:hover {
+   transform: scale(0.7);
+}
+.card--rotate-plus:hover {
+   transform: rotate(20deg);
+}
+.card--rotate-minus:hover {
+   transform: rotate(-50deg);
+}
+.card--skew-type-1:hover {
+   transform: skew(10deg, 20deg);
+}
+.card--skew-type-2:hover {
+   transform: skew(20deg, 0deg);
+}
+.card--skew-type-3:hover {
+   transform: skew(20deg, 40deg);
+}
+.rotate-type-2 {
+   font-size: 25px;
+}
+.rotate-type-2:hover {
+   transform: rotate(40deg);
+   transform-origin: 50% 0;
+}
+.cards__wrapper--3d {
+   perspective: 150px;
+}
+.cards__wrapper--3d:hover .rotate3d-type-1 {
+   transform: rotate3d(30, 40, 40, 30deg);
+}
+.cards__wrapper--3d:hover .rotate3d-type-2 {
+   transform: rotate3d(0, 40, 0, -20deg);
+}
+.cards__wrapper--3d:hover .rotate3d-type-3 {
+   transform: rotate3d(0, 40, 0, 180deg);
+}
+.cards__wrapper--3d:hover .rotate3d-type-4 {
+   transform: rotate3d(0, 40, 0, 360deg);
+}
+.cards__wrapper--3d:hover .rotate3d-type-5 {
+   transform: rotate3d(0, 40, 0, 90deg);
+}
+.rotate3d-type-6 {
+   transition: all 0.3s;
+   background-image: url("../img/card.jpg");
+   background-size: 100%;
+}
+.cards__wrapper--3d:hover .rotate3d-type-6 {
+   transform: rotate3d(0, 40, 0, 180deg);
+   background-image: url("../img/joker.png");
+   background-size: 100%;
+}
+.practice--margin {
+   margin-bottom: 130px;
+}
+/* =====car===== */
+.link-of-car {
+   display: inline-block;
+   font-size: 50px;
+   margin-bottom: 30px;
+   background-color: aqua;
+   border-radius: 30px;
+   transition: all 0.5s;
+}
+.link-of-car:hover {
+   transform: scale(1.3);
+   text-shadow: 0px 0px 8px black;
+}
+/* ======car========== */
+.car-wrapper {
+   position: relative;
+   margin: 0 auto;
+   width: 666px;
+   height: 300px;
+   background-size: 100%;
+   bottom: 20px;
+   left: 20px;
+   padding: 1%;
+}
+
+.car__body {
+   position: absolute;
+   bottom: 138px;
+   left: 40px;
+   width: 400px;
+   height: 85px;
+   background-color: rgb(243, 197, 13);
+   border-radius: 100px 70px 0 0;
+   border-top: 2px solid grey;
+   border-left: 2px solid grey;
+   border-right: 2px solid grey;
+}
+.car__body--item-bottom {
+   bottom: 50px;
+   left: 40px;
+   width: 500px;
+   height: 90px;
+   border-radius: 0 60px 10px 10px;
+   border-bottom: 2px solid grey;
+}
+
+.whell__background {
+   background-color: rgb(48, 48, 48);
+   position: absolute;
+   bottom: -48px;
+   left: 43px;
+   width: 105px;
+   height: 105px;
+   border-radius: 50%;
+   border: 7px solid rgb(243, 197, 13);
+}
+.whell__background--front {
+   left: 378px;
+}
+.car__botton-board {
+   position: absolute;
+   top: 102%;
+   background-color: white;
+   width: 500px;
+   height: 50px;
+}
+.whell__item {
+   background: grey;
+   width: 85px;
+   height: 85px;
+   border-radius: 50px;
+   position: absolute;
+   bottom: -41px;
+   left: 52.8px;
+   z-index: 1;
+}
+.whell__item--front {
+   left: 388px;
+}
+.whell__disc {
+   position: absolute;
+   border-radius: 50%;
+   top: 2.5px;
+   left: 3px;
+   border: 16px solid rgb(26, 26, 26);
+   outline: 2.5px dashed rgb(26, 26, 26);
+   width: 80px;
+   height: 80px;
+}
+.disc-car__item {
+   width: 6px;
+   height: 40px;
+   position: absolute;
+   top: 4px;
+   left: 21px;
+   background: rgb(255, 252, 249);
+   background: radial-gradient(circle, rgba(255, 252, 249, 1) 0%, rgba(133, 133, 133, 1) 100%);
+   border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+   transform: rotate(-5deg);
+}
+.disc-car__item-2 {
+   transform: rotate(-95deg);
+}
+.disc-car__item-3 {
+   transform: rotate(40deg);
+}
+.disc-car__item-4 {
+   transform: rotate(130deg);
+}
+
+.door {
+   position: absolute;
+   width: 70px;
+   height: 135px;
+   right: 35px;
+   top: 25px;
+   border-radius: 5px;
+   z-index: 1;
+   border: 2px solid rgb(82, 82, 82);
+   box-shadow: 0 0 1px grey;
+}
+.window {
+   position: absolute;
+   width: 70px;
+   height: 70px;
+   left: 25px;
+   top: 25px;
+   border-radius: 40px 5px 5px 5px;
+   z-index: 1;
+   border: 2px solid rgb(82, 82, 82);
+   box-shadow: 0 0 1px grey;
+}
+.window--second {
+   width: 90px;
+   height: 70px;
+   left: 100px;
+   border-radius: 5px;
+}
+.window--three {
+   width: 90px;
+   height: 70px;
+   left: 195px;
+   border-radius: 5px;
+}
+.door__window {
+   position: absolute;
+   width: 59px;
+   height: 60px;
+   left: 4px;
+   top: 8px;
+   border-radius: 5px;
+   z-index: 1;
+   border: 2px solid grey;
+   box-shadow: 0 0 1px grey;
+}
+.window--before {
+   width: 17px;
+   height: 55px;
+   left: 382px;
+   top: 28px;
+   border-radius: 5px 20px 0 5px;
+   border-right: none;
+}
+[class*="window"] {
+   background-color: rgb(201 220 228);
+}
+.car__body p {
+   display: inline-block;
+   position: absolute;
+   top: 23px;
+   left: 145px;
+   font-size: 35px;
+   text-shadow: 0 0 5px rgb(87, 70, 1);
+}
+.hech {
+   border: 2px solid grey;
+   box-shadow: 0 0 1px grey;
+   width: 35px;
+   height: 5px;
+   background-color: rgb(243, 197, 13);
+   border-radius: 50px;
+   position: absolute;
+   top: -4.5px;
+   left: 250px;
+}
+.hech--back {
+   left: 130px;
+}
+.hech--open {
+   transform: rotate(15deg);
+   top: -10px;
+}
+.hech--open-back {
+   top: -5px;
+   left: 130px;
+}
+.hech--back:hover ~ .hech--open-back,
+.hech--open-back:hover {
+   top: -10px;
+   transform: rotate(15deg);
+}
+.car__line {
+   height: 4px;
+   width: 256px;
+   background-color: grey;
+   border-radius: 2px;
+   position: absolute;
+   left: 28px;
+   top: 13px;
+}
+.car__line--bottom {
+   width: 134px;
+   background-color: grey;
+   left: 150px;
+   top: 65px;
+}
+.door__line {
+   height: 4px;
+   width: 55px;
+   background-color: grey;
+   border-radius: 2px;
+   position: absolute;
+   left: 6px;
+   top: 70px;
+}
+.siren {
+   background: rgb(0, 0, 0);
+   background: linear-gradient(94deg, rgba(0, 0, 0, 1) 0%, rgba(252, 70, 70, 1) 73%);
+   width: 13px;
+   height: 18px;
+   border-radius: 20px 20px 0 0;
+   position: absolute;
+   top: -20px;
+   right: 60px;
+   display: inline-block;
+}
+.siren__item {
+   border: 2px solid grey;
+   box-shadow: 0 0 1px grey;
+   width: 17px;
+   height: 5px;
+   background-color: rgb(243, 197, 13);
+   border-radius: 50px;
+   position: absolute;
+   top: 15px;
+   right: -2px;
+}
+.siren:hover {
+   background: rgb(252, 70, 70);
+   background: linear-gradient(94deg, rgba(252, 70, 70, 1) 40%, rgba(0, 0, 0, 1) 100%);
+}
+.car__spotlight {
+   background-color: rgb(212, 172, 10);
+   position: absolute;
+   top: 12px;
+   left: 460px;
+   width: 17px;
+   height: 20px;
+   border-top: 2px solid grey;
+   border-left: 2px solid grey;
+   border-bottom: 2px solid grey;
+   border-right: 3px solid rgb(201 220 228);
+   border-radius: 15px 0 0 15px;
+   transform: rotate(2deg);
+}
+.car__spotlight--back {
+   top: 20px;
+   left: -5px;
+   width: 10px;
+   height: 20px;
+   transform: rotate(-180deg);
+   border-right: 3px solid red;
+}
+.car__bumper {
+   width: 20px;
+   height: 15px;
+   position: absolute;
+   top: 72px;
+   left: -6px;
+   background: rgb(138, 132, 132);
+   background: linear-gradient(94deg, rgba(138, 132, 132, 1) 32%, rgba(242, 245, 244, 1) 100%);
+   border-radius: 5px 10px 10px 5px;
+   border: 1px solid black;
+   border-left: none;
+}
+.car__bumper--front {
+   left: 485px;
+   transform: rotate(180deg);
+}
+.car__signal {
+   position: absolute;
+   top: 8px;
+   left: 450px;
+   background: red;
+   border: 1px solid grey;
+   border-radius: 50px;
+   width: 7px;
+   height: 7px;
+}
+.car__signal--back {
+   left: 5px;
+}
+.car__item {
+   border-radius: 50%;
+   width: 6px;
+   height: 6px;
+   border: 1px solid black;
+   background-color: grey;
+   position: absolute;
+   top: 7px;
+   left: 80px;
+}
+.car__item-2 {
+   left: 130px;
+}
+.car__item-3 {
+   left: 180px;
+}
+.car__item-4 {
+   left: 230px;
+}
+.car__item-5 {
+   left: 280px;
+}
+.car__item-6 {
+   left: 330px;
+}
+.car__item-7 {
+   left: 367px;
+   top: 160px;
+}
+.car__item-8 {
+   left: 152px;
+   top: 160px;
+}
+.car__item-9 {
+   left: 33px;
+   top: 160px;
+}
+.window__seat {
+   position: absolute;
+   width: 10px;
+   height: 20px;
+   background-color: rgba(128, 128, 128, 0.381);
+   bottom: -0.5px;
+   left: 20px;
+   border-radius: 3px 10px 0 0;
+}
+.window__seat--2 {
+   left: 59px;
+}
+.window__seat--3 {
+   left: 60px;
+}
+.window__item {
+   height: 35px;
+   width: 1px;
+   background-color: rgb(68, 68, 68);
+   position: absolute;
+   bottom: 0;
+   left: 3px;
+   transform: rotate(15deg);
+}
+.window__item--2 {
+   height: 15px;
+   bottom: 26px;
+   transform: rotate(-5deg);
+   left: 8px;
+}
+
