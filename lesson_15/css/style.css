@@ -1,0 +1,234 @@
+@import url("fonts.css");
+@import url("reset.css");
+/* =========================================== */
+body {
+   background: rgb(250, 174, 126);
+   background: linear-gradient(
+      90deg,
+      rgba(250, 174, 126, 1) 0%,
+      rgba(198, 198, 198, 1) 3%,
+      rgba(255, 255, 255, 0) 6%,
+      rgba(255, 255, 255, 0) 94%,
+      rgba(198, 198, 198, 1) 97%,
+      rgba(250, 174, 126, 1) 100%
+   );
+}
+header {
+   font-family: "The Resto";
+   background: rgb(150, 172, 225);
+   background: radial-gradient(circle, rgba(150, 172, 225, 1) 0%, rgba(72, 106, 97, 1) 90%);
+   font-weight: 400;
+   text-align: center;
+   font-size: 100px;
+   padding: 3% 0;
+   color: rgb(0, 0, 0);
+   text-shadow: 2px 2px 3px red;
+   margin-bottom: 10%;
+   border-radius: 0 0 50% 50%;
+}
+header:hover {
+   background: rgb(110, 147, 233);
+   background: radial-gradient(circle, rgb(85, 123, 213) 0%, rgba(72, 106, 97, 1) 90%);
+}
+footer p {
+   height: 20px;
+   font-size: 15px;
+   padding-top: 5px;
+   text-align: center;
+   display: block;
+   background: rgb(150, 172, 225);
+   background: radial-gradient(circle, rgba(150, 172, 225, 1) 0%, rgba(72, 106, 97, 1) 90%);
+}
+/* =========================================== */
+
+.practice {
+   width: 60%;
+}
+.practice--margin {
+   margin: 0 auto;
+}
+.practice__container {
+   text-align: center;
+}
+.practice__title {
+   display: inline-block;
+   width: 600px;
+   height: auto;
+   text-align: center;
+   padding: 10px;
+   font-size: 50px;
+   background-color: rgb(112, 146, 146);
+   border-radius: 40px 0 40px 0;
+   color: azure;
+   text-shadow: 2px 2px 5px black;
+   margin-bottom: 50px;
+   box-shadow: 0 0 10px black;
+}
+.keys {
+   margin-bottom: 40px;
+   background-color: rgb(131, 131, 235);
+   border-radius: 10px;
+   display: flex;
+   padding: 15px;
+   box-shadow: 0 0 10px black;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 15px;
+}
+.keys__button {
+   font-size: 20px;
+   padding: 10px;
+   background-color: rgb(8, 220, 8);
+   border-radius: 10px;
+   border: 1px solid black;
+   box-shadow: 0 0 5px black;
+   transition: all 0.2s;
+}
+.keys__button:hover {
+   transform: scale(1.2);
+   outline: 3px solid black;
+}
+.keys__button:active {
+   transform: scale(1.1);
+   box-shadow: 0 0 20px rgb(248, 248, 248);
+}
+@keyframes flex-elements {
+   0% {
+      transform: rotate(-3deg);
+   }
+   50% {
+      transform: rotate(3deg);
+   }
+   100% {
+      transform: rotate(-3deg);
+   }
+}
+/* !========flex-start======== */
+.flex-container {
+   background-color: rgb(89, 89, 243);
+   border-radius: 10px;
+   display: none;
+   padding: 15px;
+   box-shadow: 0 0 10px black;
+   justify-content: flex-start;
+   gap: 3px;
+}
+.flex-container:target {
+   display: flex;
+}
+.flex-container__block {
+   font-size: 40px;
+   padding: 10px;
+   background-color: rgb(8, 220, 8);
+   border-radius: 10px;
+   border: 1px solid black;
+   box-shadow: 0 0 5px black;
+   animation: flex-elements 0.2s linear infinite;
+}
+/* !========flex-end======== */
+.flex-container--end {
+   background-color: rgb(89, 89, 243);
+   border-radius: 10px;
+   padding: 15px;
+   box-shadow: 0 0 10px black;
+   justify-content: flex-end;
+   display: none;
+   gap: 3px;
+}
+.flex-container--end:target {
+   display: flex;
+}
+/* !========center======== */
+.flex-container--center {
+   background-color: rgb(89, 89, 243);
+   border-radius: 10px;
+   padding: 15px;
+   box-shadow: 0 0 10px black;
+   justify-content: center;
+   display: none;
+   gap: 3px;
+}
+.flex-container--center:target {
+   display: flex;
+}
+/* !========space-between======== */
+.flex-container--space-between {
+   background-color: rgb(89, 89, 243);
+   border-radius: 10px;
+   padding: 15px;
+   box-shadow: 0 0 10px black;
+   justify-content: space-between;
+   display: none;
+   gap: 3px;
+}
+.flex-container--space-between:target {
+   display: flex;
+}
+/* !========space-around======== */
+.flex-container--space-around {
+   background-color: rgb(89, 89, 243);
+   border-radius: 10px;
+   padding: 15px;
+   box-shadow: 0 0 10px black;
+   justify-content: space-around;
+   display: none;
+   gap: 3px;
+}
+.flex-container--space-around:target {
+   display: flex;
+}
+/* !========space-evenly======== */
+.flex-container--space-evenly {
+   background-color: rgb(89, 89, 243);
+   border-radius: 10px;
+   padding: 15px;
+   box-shadow: 0 0 10px black;
+   justify-content: space-evenly;
+   display: none;
+   gap: 3px;
+}
+.flex-container--space-evenly:target {
+   display: flex;
+}
+/* !========inline-flex======== */
+.flex-container--inline {
+   background-color: rgb(89, 89, 243);
+   border-radius: 10px;
+   padding: 15px;
+   box-shadow: 0 0 10px black;
+   justify-content: flex-end;
+   display: none;
+   gap: 3px;
+}
+.flex-container--inline:target {
+   display: inline-flex;
+}
+/* !========nowrap======== */
+.flex-container--nowrap {
+   background-color: rgb(89, 89, 243);
+   border-radius: 10px;
+   padding: 15px;
+   box-shadow: 0 0 10px black;
+   justify-content: flex-start;
+   display: none;
+   flex-wrap: nowrap;
+   gap: 3px;
+}
+.flex-container--nowrap:target {
+   display: flex;
+}
+/* !========wrap======== */
+.flex-container--wrap {
+   background-color: rgb(89, 89, 243);
+   border-radius: 10px;
+   padding: 15px;
+   box-shadow: 0 0 10px black;
+   justify-content: flex-start;
+   display: none;
+   flex-wrap: wrap;
+   gap: 3px;
+}
+.flex-container--wrap:target {
+   display: flex;
+}
+/* !=============================================== */
