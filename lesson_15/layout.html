@@ -12,23 +12,58 @@
    <body>
       <div class="wrapper">
          <header class="header-new header-new--margin">
-            <div class="header__container">
-               <div class="header__logo logo-header">
+            <div class="header-new__container">
+               <div class="header-new__logo logo-header">
                   <img src="img/header/logo.svg" alt="#" class="logo-header__item">
                </div>
-               <div class="header__main-content">
-                  <div class="header__search search-header">
+               <div class="header-new__main-content">
+                  <div class="header-new__search search-header">
                      <div class="search-header__inem">
                         <span class="search-text">Search</span>
                      </div>
                   </div>
-                  <a href="#" class="header__language language-header">
+                  <div class="header-new__language language-header" id="language-1">
                      <div class="language-header__item">
-                        <span class="language-header__text">English (united States)</span>
+                        <a href="#language-1" class="language-header__text">🇺🇸 English (united States)</a>
                      </div>
-                  </a>
+                     <div class="language-header__add-language">
+                        <a href="#language-2" class="language-header__text">Ukrainian</a>
+                        <a href="#language-3" class="language-header__text">French</a>
+                        <a href="#language-4" class="language-header__text">Italian</a>
+                     </div>
+                  </div>
+                  <div class="header-new__language language-header" id="language-2">
+                     <div class="language-header__item">
+                        <a href="#language-2" class="language-header__text">🇺🇦 Ukrainian</a>
+                     </div>
+                     <div class="language-header__add-language language-header__add-language--2">
+                        <a href="#language-1" class="language-header__text">English (united States)</a>
+                        <a href="#language-3" class="language-header__text">French</a>
+                        <a href="#language-4" class="language-header__text">Italian</a>
+                     </div>
+                  </div>
+                  <div class="header-new__language language-header" id="language-3">
+                     <div class="language-header__item">
+                        <a href="#language-3" class="language-header__text">🇫🇷 French</a>
+                     </div>
+                     <div class="language-header__add-language language-header__add-language--3">
+                        <a href="#language-2" class="language-header__text">Ukrainian</a>
+                        <a href="#language-1" class="language-header__text">English (united States)</a>
+                        <a href="#language-4" class="language-header__text">Italian</a>
+                     </div>
+                  </div>
+                  <div class="header-new__language language-header" id="language-4">
+                     <div class="language-header__item">
+                        <a href="#language-4" class="language-header__text">🇮🇹 Italian</a>
+                     </div>
+                     <div class="language-header__add-language language-header__add-language--4">
+                        <a href="#language-2" class="language-header__text">Ukrainian</a>
+                        <a href="#language-3" class="language-header__text">French</a>
+                        <a href="#language-1" class="language-header__text">English (united States)</a>
+                     </div>
+                  </div>
                </div>
-               <div class="header__buttons buttons-header">
+               <div class="header-new__buttons buttons-header">
                   <a class="buttons-header__item" href="#">
                      <span class="button-text">Login</span>
                   </a>
@@ -40,9 +75,12 @@
          </header>
          <main class="main">
             <div class="layout">
-               <div class="container">
-                  <div class="categories">
-                     <h2 class="categories__title">Categories For Men</h2>
+               <div class="container container--margin">
+                  <div class="categories categories--margin">
+                     <div class="categories__title">
+                        <div class="categories__icon"></div>
+                        <span class="categories__text">Categories For Men</span>
+                     </div>
                      <ul class="categories__card-lists">
                         <li class="categories__item item-card">
                            <a href="#" class="item-card__photo-link">
@@ -53,9 +91,7 @@
                                  <h3 class="item-card__title">
                                     <a href="#" class="item-card__link-title">Shirts</a>
                                  </h3>
-                                 <div class="item-card__text">
-                                    Explore Now!
-                                 </div>
+                                 <div class="item-card__text"> <span>Explore Now!</span> </div>
                               </div>
                               <a href="#" class="item-card__link"></a>
                            </div>
@@ -67,9 +103,9 @@
                            <div class="item-card__body">
                               <div class="item-card__content">
                                  <h3 class="item-card__title">
-                                    <a href="#" class="item-card__link-title">PPrinted T-Shirts</a>
+                                    <a href="#" class="item-card__link-title">Printed T-Shirts</a>
                                  </h3>
-                                 <div class="item-card__text"> Explore Now! </div>
+                                 <div class="item-card__text"> <span>Explore Now!</span> </div>
                               </div>
                               <a href="#" class="item-card__link"></a>
                            </div>
@@ -83,7 +119,7 @@
                                  <h3 class="item-card__title">
                                     <a href="#" class="item-card__link-title">Plain T-Shirt</a>
                                  </h3>
-                                 <div class="item-card__text"> Explore Now! </div>
+                                 <div class="item-card__text"> <span>Explore Now!</span> </div>
                               </div>
                               <a href="#" class="item-card__link"></a>
                            </div>
@@ -97,7 +133,7 @@
                                  <h3 class="item-card__title">
                                     <a href="#" class="item-card__link-title">Polo T-Shirt</a>
                                  </h3>
-                                 <div class="item-card__text"> Explore Now! </div>
+                                 <div class="item-card__text"> <span>Explore Now!</span> </div>
                               </div>
                               <a href="#" class="item-card__link"></a>
                            </div>
@@ -111,7 +147,7 @@
                                  <h3 class="item-card__title">
                                     <a href="#" class="item-card__link-title">Hoodies & Sweetshirt</a>
                                  </h3>
-                                 <div class="item-card__text"> Explore Now! </div>
+                                 <div class="item-card__text"> <span>Explore Now!</span> </div>
                               </div>
                               <a href="#" class="item-card__link"></a>
                            </div>
@@ -125,7 +161,7 @@
                                  <h3 class="item-card__title">
                                     <a href="#" class="item-card__link-title">Jeans</a>
                                  </h3>
-                                 <div class="item-card__text"> Explore Now! </div>
+                                 <div class="item-card__text"> <span>Explore Now!</span> </div>
                               </div>
                               <a href="#" class="item-card__link"></a>
                            </div>
@@ -139,7 +175,7 @@
                                  <h3 class="item-card__title">
                                     <a href="#" class="item-card__link-title">Activewear</a>
                                  </h3>
-                                 <div class="item-card__text"> Explore Now! </div>
+                                 <div class="item-card__text"> <span>Explore Now!</span> </div>
                               </div>
                               <a href="#" class="item-card__link"></a>
                            </div>
@@ -153,19 +189,218 @@
                                  <h3 class="item-card__title">
                                     <a href="#" class="item-card__link-title">Boxers</a>
                                  </h3>
-                                 <div class="item-card__text"> Explore Now! </div>
+                                 <div class="item-card__text"> <span>Explore Now!</span> </div>
                               </div>
                               <a href="#" class="item-card__link"></a>
                            </div>
                         </li>
-
+                     </ul>
+                  </div>
+                  <!-- ====================== -->
+                  <div class="wishlist wishlist--margin">
+                     <h2 class="wishlist__title">Wishlist</h2>
+                     <ul class="wishlist__content">
+                        <li class="wishlist__item item-wishlist">
+                           <div class="item-wishlist__content">
+                              <div class="item-wishlist__left left-item-wishlist">
+                                 <a href="#" class="left-item-wishlist__wrap-photo">
+                                    <img class="left-item-wishlist__photo" src="img/main/maket-2/photo_01.webp" alt="#">
+                                 </a>
+                                 <div class="left-item-wishlist__text-content text-wishlist-content">
+                                    <a href="#" class="text-wishlist-content__title">Blue Flower Print Crop Top</a>
+                                    <div class="text-wishlist-content__color">Color : <span>Yellow</span>
+                                    </div>
+                                    <div class="text-wishlist-content__quentiy">Quantity : <span>1</span>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="item-wishlist__right right-item-wishlist">
+                                 <div class="right-item-wishlist__price">$29.00</div>
+                                 <a href="#" class="right-item-wishlist__button">Add to cart</a>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="wishlist__item item-wishlist">
+                           <div class="item-wishlist__content">
+                              <div class="item-wishlist__left left-item-wishlist">
+                                 <a href="#" class="left-item-wishlist__wrap-photo">
+                                    <img class="left-item-wishlist__photo" src="img/main/maket-2/photo_02.webp" alt="#">
+                                 </a>
+                                 <div class="left-item-wishlist__text-content text-wishlist-content">
+                                    <a href="#" class="text-wishlist-content__title">Yellow Flower Print Dress</a>
+                                    <div class="text-wishlist-content__color">Color : <span>Yellow</span>
+                                    </div>
+                                    <div class="text-wishlist-content__quentiy">Quantity : <span>1</span>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="item-wishlist__right right-item-wishlist">
+                                 <div class="right-item-wishlist__price">$78.00</div>
+                                 <a href="#" class="right-item-wishlist__button">Add to cart</a>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="wishlist__item item-wishlist">
+                           <div class="item-wishlist__content">
+                              <div class="item-wishlist__left left-item-wishlist">
+                                 <a href="#" class="left-item-wishlist__wrap-photo">
+                                    <img class="left-item-wishlist__photo" src="img/main/maket-2/photo_03.webp" alt="#">
+                                 </a>
+                                 <div class="left-item-wishlist__text-content text-wishlist-content">
+                                    <a href="#" class="text-wishlist-content__title">White Hoodie long sleeve</a>
+                                    <div class="text-wishlist-content__color">Color : <span>White</span>
+                                    </div>
+                                    <div class="text-wishlist-content__quentiy">Quantity : <span>1</span>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="item-wishlist__right right-item-wishlist">
+                                 <div class="right-item-wishlist__price">$134.00</div>
+                                 <a href="#" class="right-item-wishlist__button">Add to cart</a>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="wishlist__item item-wishlist">
+                           <div class="item-wishlist__content">
+                              <div class="item-wishlist__left left-item-wishlist">
+                                 <a href="#" class="left-item-wishlist__wrap-photo">
+                                    <img class="left-item-wishlist__photo" src="img/main/maket-2/photo_04.webp" alt="#">
+                                 </a>
+                                 <div class="left-item-wishlist__text-content text-wishlist-content">
+                                    <a href="#" class="text-wishlist-content__title">Brown men’s long sleeve T-shirt</a>
+                                    <div class="text-wishlist-content__color">Color : <span>Brown</span>
+                                    </div>
+                                    <div class="text-wishlist-content__quentiy">Quantity : <span>1</span>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="item-wishlist__right right-item-wishlist">
+                                 <div class="right-item-wishlist__price">$93.00</div>
+                                 <a href="#" class="right-item-wishlist__button">Add to cart</a>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <!-- =================================================== -->
+                  <div class="order order--margin">
+                     <ul class="order__elements elements-order">
+                        <li class="elements-order__item item-order">
+                           <div class="item-order__block-top top-block-item">
+                              <h3 class="top-block-item__title">Order no: #123456789</h3>
+                              <div class="top-block-item__content">
+                                 <div class="top-block-item__left-element left-element-item">
+                                    <p class="left-element-point-first">Order Date : <span>2 June 2023 2:40 PM</span>
+                                    </p>
+                                    <p class="left-element-point-second">Estimated Delivery Date : <span>8 June
+                                          2023</span>
+                                    </p>
+                                 </div>
+                                 <div class="top-block-item__right-element right-element-item">
+                                    <p class="right-element-point-first">Order Status : <span>Inprogress</span>
+                                    </p>
+                                    <p class="right-element-point-second">Payment Method : <span>Cash on delivery</span>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="item-order__block-bottom bottom-block">
+                              <div class="bottom-block__left-item left-item-block">
+                                 <a class="left-item-block__photo-wrap photo-wrap-order" href="#">
+                                    <img src="img/main/maket-3/photo_1.webp" alt="#" class="photo-order">
+                                 </a>
+                                 <div class="left-item-block__text">
+                                    <a href="#" class="left-item-block__title">Black Printed T-shirt</a>
+                                    <p class="left-item-block__point-first">Colour : <span>Pink</span>
+                                    </p>
+                                    <p class="left-item-block__point-second">Qty : <span>1</span>
+                                    </p>
+                                    <p class="left-item-block__point-third">Total : $23.00 </p>
+                                 </div>
+                              </div>
+                              <a href="#" class="bottom-right-button-item"> View Detail </a>
+                           </div>
+                        </li>
+                        <li class="elements-order__item item-order">
+                           <div class="item-order__block-top top-block-item">
+                              <h3 class="top-block-item__title">Order no: #123456789</h3>
+                              <div class="top-block-item__content">
+                                 <div class="top-block-item__left-element left-element-item">
+                                    <p class="left-element-point-first">Order Date : <span>2 June 2023 2:40 PM</span>
+                                    </p>
+                                    <p class="left-element-point-second">Estimated Delivery Date : <span>8 June
+                                          2023</span>
+                                    </p>
+                                 </div>
+                                 <div class="top-block-item__right-element right-element-item">
+                                    <p class="right-element-point-first">Order Status : <span>Shipped</span>
+                                    </p>
+                                    <p class="right-element-point-second">Payment Method : <span>Cash on delivery</span>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="item-order__block-bottom bottom-block">
+                              <div class="bottom-block__left-item left-item-block">
+                                 <a class="left-item-block__photo-wrap photo-wrap-order" href="#">
+                                    <img src="img/main/maket-3/photo_2.webp" alt="#" class="photo-order">
+                                 </a>
+                                 <div class="left-item-block__text">
+                                    <a href="#" class="left-item-block__title">Black Printed T-shirt</a>
+                                    <p class="left-item-block__point-first">Colour : <span>White</span>
+                                    </p>
+                                    <p class="left-item-block__point-second">Qty : <span>1</span>
+                                    </p>
+                                    <p class="left-item-block__point-third">Total : $143.00</p>
+                                 </div>
+                              </div>
+                              <a href="#" class="bottom-right-button-item"> View Detail </a>
+                           </div>
+                        </li>
+                        <li class="elements-order__item item-order">
+                           <div class="item-order__block-top top-block-item">
+                              <h3 class="top-block-item__title">Order no: #123456789</h3>
+                              <div class="top-block-item__content">
+                                 <div class="top-block-item__left-element left-element-item">
+                                    <p class="left-element-point-first">Order Date : <span>2 June 2023 2:40 PM</span>
+                                    </p>
+                                    <p class="left-element-point-second">Estimated Delivery Date : <span>8 June
+                                          2023</span>
+                                    </p>
+                                 </div>
+                                 <div class="top-block-item__right-element right-element-item">
+                                    <p class="right-element-point-first">Order Status : <span>Inprogress</span>
+                                    </p>
+                                    <p class="right-element-point-second">Payment Method : <span>Cash on delivery</span>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="item-order__block-bottom bottom-block">
+                              <div class="bottom-block__left-item left-item-block">
+                                 <a class="left-item-block__photo-wrap photo-wrap-order" href="#">
+                                    <img src="img/main/maket-3/photo_3.webp" alt="#" class="photo-order">
+                                 </a>
+                                 <div class="left-item-block__text">
+                                    <a href="#" class="left-item-block__title">Black Printed T-shirt</a>
+                                    <p class="left-item-block__point-first">Colour : <span>Blue</span>
+                                    </p>
+                                    <p class="left-item-block__point-second">Qty : <span>1</span>
+                                    </p>
+                                    <p class="left-item-block__point-third">Total : $93.00 </p>
+                                 </div>
+                              </div>
+                              <a href="#" class="bottom-right-button-item"> View Detail </a>
+                           </div>
+                        </li>
                      </ul>
                   </div>
                </div>
             </div>
          </main>
          <footer class="footer">
-            <p>15.11.2023</p>
+            <span class="footer__text"> dm_smile --- 18.11.2023</span>
+            <a class="footer__link" href="index.html">back to practice</a>
          </footer>
       </div>
    </body>
