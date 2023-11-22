@@ -12,17 +12,6 @@
    flex-grow: 1;
 }
 /* =========================================== */
-body {
-   background: linear-gradient(
-      90deg,
-      rgba(250, 174, 126, 1) 0%,
-      rgba(198, 198, 198, 1) 3%,
-      rgba(255, 255, 255, 0) 6%,
-      rgba(255, 255, 255, 0) 94%,
-      rgba(198, 198, 198, 1) 97%,
-      rgba(250, 174, 126, 1) 100%
-   );
-}
 .header {
    font-family: "The Resto";
    background: radial-gradient(circle, rgba(150, 172, 225, 1) 0%, rgba(72, 106, 97, 1) 90%);
@@ -59,7 +48,7 @@ body {
    border: 2px solid rgb(255, 0, 0);
 }
 /* =========================================== */
-
+/* =====1===== */
 .layout-first {
    margin: 0 auto;
    max-width: 1220px;
@@ -67,6 +56,7 @@ body {
    font-family: "Inter";
    font-size: 18px;
    font-weight: 400;
+   margin-bottom: 5%;
 }
 .layout-first__label {
    display: inline-block;
@@ -133,12 +123,111 @@ body {
    align-items: center;
    width: 184px;
    height: 65px;
-   flex-grow: 0;
-   flex-shrink: 0;
-   flex-basis: 65px;
+   flex: 0 0 65;
    color: #fff;
    text-align: center;
    font-size: 18px;
    font-weight: 600;
    text-transform: capitalize;
+}
+/* ====2==== */
+.layout-second {
+   margin: 0 auto;
+   max-width: 895px;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-items: flex-start;
+}
+.layout-second__title {
+   color: #3c4242;
+   font-family: "Core Sans C";
+   font-size: 28px;
+   font-weight: 600;
+   line-height: 1.19;
+   letter-spacing: 0.56px;
+   margin-bottom: 20px;
+}
+.layout-second__label {
+   color: #3c4242;
+   font-family: "Core Sans C";
+   font-size: 22px;
+   font-weight: 600;
+   line-height: 1.52;
+   letter-spacing: 0.44px;
+   margin-bottom: 50px;
+}
+.address-form{
+   display: flex;
+   flex-direction: column;
+}
+.address-form__body {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 31px;
+   margin-bottom: 30px;
+}
+.address__item {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   gap: 10px;
+   color: #3c4242;
+   font-family: "Causten";
+   font-size: 18px;
+   font-weight: 600;
+   letter-spacing: 0.36px;
+   flex-shrink: 0;
+   flex-grow: 0;
+}
+.address-form__input {
+   border-radius: 8px;
+   background: #f6f6f6;
+   display: flex;
+   flex-wrap: wrap;
+   width: 426.297px;
+   padding: 17.9px 22.3px;
+   font-size: 16px;
+   color: #807d7e;
+   font-family: "Causten";
+   font-weight: 400;
+}
+.address__label--textarea {
+}
+.address-form__input--textarea {
+   width: 895px;
+   height: 149px;
+   resize: none;
+}
+.address-form__checkbox {
+   display: flex;
+   width: 406px;
+   flex-direction: column;
+   padding-bottom: 2.8px;
+   gap: 14.8px;
+   color: #3c4242;
+   font-family: "Causten";
+   font-size: 20.087px;
+   font-weight: 400;
+}
+
+.check-1,
+.check-2 {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 0;
+   height: 0;
+   opacity: 0;
+}
+.address-form__checker::before {
+   content: "";
+   flex-shrink: 0;
+   width: 15px;
+   height: 15px;
+   margin-right: 11px;
+   background-color: #dd8940;
+   border-radius: 2px;
+   transition: all 0.3s;
 }
