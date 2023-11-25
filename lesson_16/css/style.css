@@ -46,6 +46,9 @@
    border-radius: 5px;
    border: 2px solid rgb(255, 0, 0);
 }
+main {
+   padding-bottom: 60px;
+}
 /* =========================================== */
 /* =====1===== */
 .layout-first {
@@ -55,6 +58,8 @@
    font-family: "Inter";
    font-size: 18px;
    font-weight: 400;
+}
+.layout-first--margin {
    margin-bottom: 5%;
 }
 .layout-first__label {
@@ -89,7 +94,7 @@
    align-items: center;
    gap: 50px;
 }
-.contact__body {
+.contact-form__body {
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
@@ -122,7 +127,7 @@
    align-items: center;
    width: 184px;
    height: 65px;
-   flex: 0 0 65;
+   flex: 0 0 65px;
    color: #fff;
    text-align: center;
    font-size: 18px;
@@ -137,12 +142,14 @@
 }
 /* ====2==== */
 .layout-second {
-   margin: 0 auto;
    max-width: 895px;
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
    align-items: flex-start;
+}
+.layout-second--margin {
+   margin: 0 auto;
 }
 .layout-second__title {
    color: #3c4242;
@@ -173,10 +180,11 @@
    gap: 31px;
    margin-bottom: 30px;
 }
-.address__item {
+.address-form__item {
    display: flex;
    flex-direction: column;
    justify-content: space-between;
+   flex: 0 1 427px;
    gap: 10px;
    color: #3c4242;
    font-family: "Causten";
@@ -185,6 +193,7 @@
    letter-spacing: 0.36px;
    flex-shrink: 0;
    flex-grow: 0;
+   flex-wrap: wrap;
 }
 .address-form__input {
    border-radius: 8px;
@@ -204,7 +213,7 @@
    height: 149px;
    resize: none;
 }
-.address__item--textarea {
+.address-form__item--textarea {
    flex: 0 1 100%;
 }
 .address-form__checkbox {
@@ -222,13 +231,34 @@
 }
 
 .check-1,
-.check-2 {
+.check-2,
+.check-3 {
    position: absolute;
    top: 0;
    left: 0;
    width: 0;
    height: 0;
    opacity: 0;
+}
+.check-1:focus-visible + .address-form__checker {
+   outline: 2px solid blue;
+   border-radius: 1px;
+}
+.check-2:focus-visible + .address-form__checker {
+   outline: 2px solid blue;
+   border-radius: 1px;
+}
+.check-3:focus-visible + .check-out__checkbox-label {
+   outline: 2px solid blue;
+   border-radius: 1px;
+}
+.shipping-address__check-1:focus-visible + .shipping-address__radio {
+   outline: 2px solid blue;
+   border-radius: 1px;
+}
+.shipping-address__check-2:focus-visible + .shipping-address__radio {
+   outline: 2px solid blue;
+   border-radius: 1px;
 }
 .address-form__checker::before {
    content: "";
@@ -240,7 +270,12 @@
    border: 1px solid black;
    border-radius: 2px;
    transition: all 0.1s;
+   position: relative;
+   left: 1px;
+   top: 2px;
+   cursor: pointer;
 }
+
 .check-1:checked + .address-form__checker::before {
    background: url("../img/check.png") 0 0 / cover no-repeat;
    transform: scale(1.7);
@@ -253,7 +288,7 @@
    border: none;
    transition: all 0.3s;
 }
-.address-form__buttons{
+.address-form__buttons {
    display: flex;
    gap: 30px;
    margin-bottom: 10%;
@@ -271,7 +306,7 @@
    font-weight: 600;
    transition: 0.2s;
 }
-.address-form__submit:hover{
+.address-form__submit:hover {
    cursor: pointer;
    background-color: #7917fa;
    box-shadow: 0 0 5px black;
@@ -289,9 +324,443 @@
    font-weight: 700;
    transition: 0.2s;
 }
-.address-form__reset:hover{
+.address-form__reset:hover {
    cursor: pointer;
    background-color: #dfdfdf;
    box-shadow: 0 0 5px black;
 }
 /* ====3==== */
+.layout-third {
+   max-width: 840px;
+}
+.layout-third--margin {
+   margin: 0 auto;
+}
+.layout-third__title {
+   color: #3c4242;
+   font-family: "Core Sans C";
+   font-size: 28px;
+   font-weight: 600;
+   line-height: 1.2;
+   letter-spacing: 0.56px;
+   display: flex;
+   gap: 15px;
+   flex: 0 1 183px;
+   margin-bottom: 20px;
+}
+.layout-third__title::before {
+   content: "";
+   width: 6px;
+   height: 28px;
+   border-radius: 10px;
+   background: #8a33fd;
+}
+.layout-third__label {
+   color: #3c4242;
+   font-family: "Core Sans C";
+   font-size: 22px;
+   font-weight: 600;
+   line-height: 1.5;
+   letter-spacing: 0.44px;
+   margin-bottom: 50px;
+}
+.layout-third__container-part-1 {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 -19px;
+   overflow: hidden;
+   margin-bottom: 43px;
+}
+.check-out {
+   border-bottom: 1px solid #edeef2;
+   padding-bottom: 32px;
+}
+.check-out--margin {
+   margin-bottom: 30px;
+}
+.check-out__item {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   flex-wrap: wrap;
+   min-width: 250px;
+   flex: 1 0 50%;
+   padding: 0 19px 28px 19px;
+}
+.check-out__item--three-column {
+   flex: 1 0 33.333%;
+}
+.check-out__item:last-child {
+   max-width: 50%;
+}
+.layout-third__container-part-1 label {
+   color: #3c4242;
+   font-family: "Causten";
+   font-size: 16px;
+   font-weight: 600;
+   letter-spacing: 0.32px;
+}
+.check-out__item input,
+.check-out__item select {
+   display: flex;
+   width: 100%;
+   padding: 16px 20px;
+   align-items: center;
+   gap: 12px;
+   border-radius: 8px;
+   background-color: #f6f6f6;
+   color: #807d7e;
+   font-family: "Causten";
+   font-size: 14px;
+   font-weight: 400;
+}
+input::-webkit-inner-spin-button {
+   display: none;
+}
+.check-out__button {
+   border-radius: 8px;
+   background-color: #8a33fd;
+   display: flex;
+   padding: 16px 20px;
+   justify-content: center;
+   align-items: center;
+   color: #fff;
+   font-family: "Causten";
+   font-size: 18px;
+   font-weight: 500;
+   transition: all 0.2s;
+   margin-bottom: 20px;
+}
+.check-out__button:hover {
+   background-color: #7a16fc;
+   cursor: pointer;
+   box-shadow: 0 0 3px black;
+}
+.check-out__checkbox-label {
+   color: #3c4242;
+   font-family: "Causten";
+   font-size: 18px;
+   font-weight: 400;
+}
+.checkbox-container {
+   position: relative;
+}
+.check-out__checkbox-label::before {
+   position: relative;
+   top: 2px;
+   left: 0;
+   content: "";
+   flex-shrink: 0;
+   width: 15px;
+   height: 15px;
+   margin-right: 11px;
+   background-color: #fbfbfb;
+   border: 1px solid black;
+   border-radius: 2px;
+   transition: all 0.1s;
+}
+
+.check-3:checked + .check-out__checkbox-label::before {
+   background: url("../img/check.png") 0 0 / cover no-repeat;
+   transform: scale(1.7);
+   border: none;
+   transition: all 0.3s;
+}
+/* === */
+.shipping-address {
+   border-bottom: 1px solid #edeef2;
+   padding-bottom: 30px;
+}
+.shipping-address--margin {
+   margin-bottom: 30px;
+}
+.shipping-address__title {
+   color: #3c4242;
+   font-family: "Core Sans C";
+   font-size: 22px;
+   font-weight: 600;
+   line-height: 1.5;
+   letter-spacing: 0.44px;
+   margin-bottom: 8px;
+}
+.shipping-address__sub-title {
+   color: #3c4242;
+   font-family: "Causten";
+   font-size: 16px;
+   font-weight: 400;
+   margin-bottom: 30px;
+}
+.shipping-address__radio-block {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   position: relative;
+   padding: 13px 48px 13px 28px;
+   border-radius: 12px;
+   background-color: #f6f6f6;
+}
+.shipping-address__wrap-items {
+   display: flex;
+   padding: 25px 0;
+   align-items: center;
+   color: #3c4242;
+   font-family: "Causten";
+   font-size: 20px;
+   font-weight: 700;
+   width: 100%;
+}
+.shipping-address__check-1,
+.shipping-address__check-2 {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 0;
+   height: 0;
+   opacity: 0;
+}
+.shipping-address__radio::before {
+   content: "";
+   flex-shrink: 0;
+   width: 20px;
+   height: 20px;
+   margin-right: 11px;
+   background-color: #fbfbfb;
+   border: 1px solid black;
+   border-radius: 50%;
+   transition: all 0.1s;
+   position: relative;
+   left: 1px;
+   top: 2px;
+   transition: all 0.3s;
+   cursor: pointer;
+}
+.shipping-address__check-1:checked + .shipping-address__radio::before {
+   background: url("../img/check-radio.png") 0 0 / cover no-repeat;
+   border: none;
+   transform: scale(1.1);
+}
+.shipping-address__check-2:checked + .shipping-address__radio::before {
+   background: url("../img/check-radio.png") 0 0 / cover no-repeat;
+   border: none;
+   transform: scale(1.1);
+}
+.shipping-address__wrap-items:not(:last-child) {
+   border-bottom: 1px solid #bebcbd;
+}
+/* === */
+.shipping-method {
+   border-bottom: 1px solid #edeef2;
+   padding-bottom: 30px;
+}
+.shipping-method--margin {
+   margin-bottom: 30px;
+}
+.shipping-method__title {
+   color: #3c4242;
+   font-family: "Core Sans C";
+   font-size: 22px;
+   font-weight: 600;
+   line-height: 1.5;
+   letter-spacing: 0.44px;
+   margin-bottom: 30px;
+}
+.shipping-method__body {
+   border-radius: 12px;
+   background: #f6f6f6;
+   padding: 7px 47px 7px 28px;
+}
+.shipping-method__item:not(:last-child) {
+   border-bottom: 1px solid #bebcbd;
+}
+.shipping-method__item {
+   padding: 25px 0;
+   color: #3c4242;
+   font-family: "Causten";
+   font-size: 20px;
+   font-weight: 700;
+}
+.shipping-method__wrap-item {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 8px;
+}
+.shipping-method__item span {
+   color: #807d7e;
+   font-family: "Causten";
+   font-size: 16px;
+   font-weight: 500;
+}
+/* === */
+.payment {
+   position: relative;
+}
+.payment__title {
+   color: #3c4242;
+   font-family: "Core Sans C";
+   font-size: 22px;
+   font-weight: 600;
+   line-height: 1.5;
+   letter-spacing: 0.44px;
+   margin-bottom: 8px;
+}
+.payment__subtitle {
+   color: #3c4242;
+   font-family: "Causten";
+   font-size: 16px;
+   font-weight: 400;
+   margin-bottom: 30px;
+}
+.payment__body {
+   border-radius: 12px;
+   background: #f6f6f6;
+   display: flex;
+   flex-direction: column;
+   padding: 45px 35px 45px 35px;
+   margin-bottom: 50px;
+}
+.payment__item {
+   padding-top: 30px;
+}
+.payment__item:not(:last-child) {
+   padding-bottom: 30px;
+}
+.payment__item:last-child {
+   align-items: self-start;
+}
+.payment__radio {
+   color: #3c4242;
+   font-family: "Causten";
+   font-size: 20px;
+   font-weight: 700;
+   margin-bottom: 8px;
+}
+.radio-payment__label {
+   color: #3c4242;
+   font-family: "Causten";
+   font-size: 16px;
+   font-weight: 400;
+   padding-top: 5px;
+   padding-left: 32px;
+}
+.radio-payment__label--cash {
+   padding-left: 36px;
+}
+.pay-type__items {
+   display: flex;
+   max-width: 380px;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin-bottom: 30px;
+}
+.pay-type__item {
+   flex: 0 0 80px;
+   gap: 20px;
+   max-width: 80px;
+   justify-content: space-between;
+   align-items: center;
+   transition: all 0.2s;
+}
+.pay-type__item img {
+   width: 100%;
+}
+.pay-type {
+   padding: 0 30px;
+}
+.pay-type__data-card {
+   display: flex;
+   justify-content: space-between;
+   gap: 30px;
+   flex-wrap: wrap;
+   border-bottom: 1px solid #bebcbd;
+   padding-bottom: 30px;
+}
+.pay-type__input {
+   display: flex;
+   justify-content: flex-start;
+   flex-wrap: wrap;
+   width: 337px;
+   flex: 0 0 337px;
+   padding: 16px 20px;
+   align-items: center;
+   border-radius: 8px;
+   border: 1px solid #3c4242;
+   color: #807d7e;
+   font-family: "Causten";
+   font-size: 14px;
+   font-weight: 400;
+   background-color: #f6f6f6;
+}
+.card-code-wrap {
+   position: relative;
+}
+.eye-button {
+   position: absolute;
+   top: 18px;
+   right: 20px;
+}
+.payment__item--cash::after{
+   content: "";
+   width: 93%;
+   position: relative;
+   left: 30px;
+   top: 30px;
+   height: 1px;
+   background-color: #BEBCBD;;
+}
+.submit-all {
+   display: inline-flex;
+   padding: 16px 20px;
+   justify-content: center;
+   align-items: center;
+   border-radius: 8px;
+   background-color: #8a33fd;
+   color: #fff;
+   font-family: "Causten";
+   font-size: 18px;
+   font-weight: 500;
+   cursor: pointer;
+   transition: all 0.3s;
+}
+.submit-all:hover {
+   background-color: #7816f9;
+   box-shadow: 0 0 3px black;
+}
+.payment__radio-input {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 0;
+   height: 0;
+   opacity: 0;
+}
+.payment__radio::before {
+   content: "";
+   flex-shrink: 0;
+   width: 20px;
+   height: 20px;
+   margin-right: 11px;
+   background-color: #fbfbfb;
+   border: 1px solid black;
+   border-radius: 50%;
+   transition: all 0.1s;
+   position: relative;
+   left: -15px;
+   top: 10px;
+   transition: all 0.3s;
+   cursor: pointer;
+}
+.payment__radio-input:checked + .payment__radio::before {
+   background: url("../img/check-radio.png") 0 0 / cover no-repeat;
+   border: none;
+   transform: scale(1.1);
+}
+.payment__radio--last::before {
+   content: "";
+   left: -15px;
+   top: 4px;
+}
+.pay-type__item:hover{
+   transform: scale(1.1);
+   box-shadow: 0 0 4px black;
+   border-radius: 5px;
+}
