@@ -1,0 +1,202 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+/* ========================================== */
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.wrapper > main {
+   flex-grow: 1;
+}
+/* =========================================== */
+.header {
+   font-family: "The Resto";
+   background: radial-gradient(circle, rgba(150, 172, 225, 1) 0%, rgba(72, 106, 97, 1) 90%);
+   font-weight: 400;
+   text-align: center;
+   font-size: 70px;
+   padding: 1% 0;
+   color: rgb(0, 0, 0);
+   text-shadow: 2px 2px 3px red;
+   margin-bottom: 3%;
+   border-radius: 0 0 50% 50%;
+}
+
+.footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   justify-content: center;
+   gap: 70px;
+   height: 40px;
+   font-size: 20px;
+   padding-top: 5px;
+   text-align: center;
+   background: radial-gradient(circle, rgba(150, 172, 225, 1) 0%, rgba(72, 106, 97, 1) 90%);
+}
+.footer__link {
+   border: 2px solid transparent;
+   transition: all 0.2s;
+}
+.footer__link:hover {
+   transform: scale(1.5);
+   border-radius: 5px;
+   border: 2px solid rgb(255, 0, 0);
+}
+main {
+   padding-bottom: 60px;
+}
+/* =========================================== */
+* {
+   /* outline: 1px solid red; */
+}
+.producrs {
+   font-family: "Inter";
+   font-size: 16px;
+   font-weight: 400;
+   color: #000;
+}
+/* CONTAINER */
+.products__container {
+   max-width: 1328px;
+   margin: 0 auto;
+   padding: 0 82px;
+}
+/* TITLES */
+.pruducts__titles {
+   display: flex;
+   flex-direction: column;
+   gap: 27px;
+   margin-bottom: 53px;
+}
+.pruducts__title {
+   font-family: "DM Serif Text";
+   font-size: 58px;
+}
+.products__subtitle {
+   color: #606060;
+   font-size: 20px;
+   line-height: 1.8;
+}
+.products__items {
+   display: flex;
+   margin: 0 -1.89%;
+   flex-wrap: wrap;
+}
+
+.item-product {
+   padding: 0 1.89%;
+   flex: 0 1 33.333%;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+.item-product__photo {
+}
+.item-product__photo img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   aspect-ratio: 357 / 240;
+}
+.item-product__title {
+   font-family: "DM Serif Text";
+   font-size: 24px;
+   line-height: 1.2;
+}
+.item-product__content {
+   display: flex;
+   flex-direction: column;
+}
+.item-product__text {
+   line-height: 1.6;
+}
+.bottom-side-item-product {
+   display: flex;
+   color: #f55529;
+   font-weight: 800;
+   line-height: 1.5;
+   justify-content: space-between;
+   margin-top: -8px;
+   align-items: center;
+}
+.bottom-side-item-product__right {
+   max-width: 24px;
+   max-height: 24px;
+}
+
+@media (max-width: 1100px) {
+   .products__items {
+      flex-wrap: wrap;
+      row-gap: 40px;
+   }
+   .item-product {
+      flex: 0 1 50%;
+      padding: 0 3%;
+      gap: 10px;
+   }
+}
+@media (max-width: 800px) {
+   .products__items {
+      flex-direction: column;
+   }
+   .item-product {
+      gap: 20px;
+      padding: 0 0;
+   }
+   .item-product:not(:last-child) {
+      border-bottom: 10px dotted rgb(126, 126, 127);
+      padding-bottom: 20px;
+   }
+   .item-product__title {
+      font-size: 34px;
+      line-height: 1.2;
+   }
+   .bottom-side-item-product {
+      font-size: 24px;
+   }
+   .item-product__text {
+      font-size: 22px;
+   }
+   .bottom-side-item-product__right a img {
+      transform: scale(1.5);
+   }
+   .pruducts__title {
+      font-size: 60px;
+   }
+   .products__subtitle {
+      font-size: 30px;
+   }
+}
+@media (max-width: 520px) {
+   .item-product {
+      gap: 30px;
+      padding: 0 0;
+      margin: 0 -15%;
+   }
+   .bottom-side-item-product__left {
+      font-size: 30px;
+   }
+   .item-product__title {
+      font-size: 34px;
+      line-height: 1.2;
+   }
+   .pruducts__title {
+      font-size: 50px;
+      position: relative;
+      top: 0;
+      left: -15%;
+   }
+   .products__subtitle {
+      font-size: 30px;
+      position: relative;
+      top: 0;
+      left: -15%;
+   }
+   .item-product__text {
+      font-size: 26px;
+   }
+}
