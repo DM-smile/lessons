@@ -50,9 +50,7 @@ main {
    padding-bottom: 60px;
 }
 /* =========================================== */
-* {
-   /* outline: 1px solid red; */
-}
+
 .producrs {
    font-family: "Inter";
    font-size: 16px;
@@ -64,6 +62,7 @@ main {
    max-width: 1328px;
    margin: 0 auto;
    padding: 0 82px;
+   overflow: hidden;
 }
 /* TITLES */
 .pruducts__titles {
@@ -127,7 +126,13 @@ main {
    max-width: 24px;
    max-height: 24px;
 }
-
+@media (min-width: 1765px) {
+   .producrs{
+      background-image: url("../img/1/rose.png");
+      background-position: right 330px;
+      background-repeat: no-repeat;
+   }
+}
 @media (max-width: 1100px) {
    .products__items {
       flex-wrap: wrap;
@@ -213,7 +218,7 @@ main {
       font-size: 28px;
       line-height: 1.2;
    }
-   .pruducts__titles{
+   .pruducts__titles {
       margin-bottom: 20px;
       gap: 10px;
    }
