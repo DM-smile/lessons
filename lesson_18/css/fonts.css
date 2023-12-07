@@ -1,0 +1,153 @@
+/* ?====== Euphoria, Jawellery, Consulting ====== */
+
+/* !=== Roboto === */
+/* @import url("https://fonts.googleapis.com/css?family=Roboto:300,regular,700&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css?family=Roboto+Serif:600&display=swap"); */
+/* !=== Poppins === */
+/* @import url("https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700&display=swap"); */
+/* !=== Manrope === */
+/* @import url("https://fonts.googleapis.com/css?family=Manrope:regular,600&display=swap"); */
+/* !=== Montserrat=== */
+/* @import url("https://fonts.googleapis.com/css?family=Montserrat:800&display=swap"); */
+/* !=== Inter === */
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600,700,800&display=swap");
+/* !=== Inter Italic === */
+/* @font-face {
+   font-family: "Inter";
+   src: url("../fonts/Inter-Italic.woff2"), url("../fonts/Inter-Italic.woff");
+   font-weight: 400;
+   font-style: italic;
+   font-display: swap;
+} */
+/* !=== Cabin === */
+/* @import url("https://fonts.googleapis.com/css?family=Cabin:600&display=swap"); */
+/* !=== Cormorant Infant === */
+/* @import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:700&display=swap"); */
+/* !=== DM Serif Text === */
+/* @import url("https://fonts.googleapis.com/css?family=DM+Serif+Text:regular&display=swap"); */
+/* !=== DM Sans === */
+/* @import url("https://fonts.googleapis.com/css?family=DM+Sans:regular,700&display=swap"); */
+/* !=== Merriweather === */
+@import url("https://fonts.googleapis.com/css?family=Merriweather:regular,700,700italic&display=swap"); 
+/* !=== Raleway === */
+/* @import url("https://fonts.googleapis.com/css?family=Raleway:500,600&display=swap"); */
+/* !=== Noto Serif === */
+/* @import url("https://fonts.googleapis.com/css?family=Noto+Serif:500,600,700,800&display=swap"); */
+/* !=== Noto Serif Display === */
+/* @import url("https://fonts.googleapis.com/css?family=Noto+Serif+Display:regular&display=swap"); */
+/* !=== Cormorant Infant === */
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:500,600,700&display=swap");
+/* !=== Ubuntu === */
+/* @import url("https://fonts.googleapis.com/css?family=Ubuntu:regular,500&display=swap"); */
+/* !=== Avenir Book === */
+ /* @font-face {
+   font-family: "Avenir";
+   src: url("../fonts/Avenir-Book.woff2"), url("../fonts/Avenir-Book.woff");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+} */
+/* !=== Avenir Light === */
+ /* @font-face {
+   font-family: "Avenir";
+   src: url("../fonts/Avenir-Light.woff2"), url("../fonts/Avenir-Light.woff");
+   font-weight: 300;
+   font-style: normal;
+   font-display: swap;
+} */
+/* !=== Causten Bold === */
+ /* @font-face {
+   font-family: "Causten";
+   src: url("../fonts/causten-bold.woff2"), url("../fonts/causten-bold.woff");
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+} */
+/* !=== Causten Light === */
+ /* @font-face {
+   font-family: "Causten";
+   src: url("../fonts/causten-light.woff2"), url("../fonts/causten-light.woff");
+   font-weight: 300;
+   font-style: normal;
+   font-display: swap;
+} */
+/* !=== Causten Medium === */
+ /* @font-face {
+   font-family: "Causten";
+   src: url("../fonts/causten-medium.woff2"), url("../fonts/causten-medium.woff");
+   font-weight: 500;
+   font-style: normal;
+   font-display: swap;
+} */
+/* !=== Causten Regular === */
+ /* @font-face {
+   font-family: "Causten";
+   src: url("../fonts/causten-regular.woff2"), url("../fonts/causten-regular.woff");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+} */
+/* !=== Causten Semi Bold === */
+ /* @font-face {
+   font-family: "Causten";
+   src: url("../fonts/causten-semi-bold.woff2"), url("../fonts/causten-semi-bold.woff");
+   font-weight: 600;
+   font-style: normal;
+   font-display: swap;
+} */
+/* !=== CoreSansC 45Regular === */
+ /* @font-face {
+   font-family: "Core Sans C";
+   src: url("../fonts/CoreSansC-45Regular.woff2"), url("../fonts/CoreSansC-45Regular.woff");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+} */
+/* !=== CoreSansC 55Medium === */
+ /* @font-face {
+   font-family: "Core Sans C";
+   src: url("../fonts/CoreSansC-55Medium.woff2"), url("../fonts/CoreSansC-55Medium.woff");
+   font-weight: 500;
+   font-style: normal;
+   font-display: swap;
+} */
+/* !=== CoreSansC 65Bold === */
+ /* @font-face {
+   font-family: "Core Sans C";
+   src: url("../fonts/CoreSansC-65Bold.woff2"), url("../fonts/CoreSansC-65Bold.woff");
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+} */
+/* !=== CoreSansC 75ExtraBold === */
+ /* @font-face {
+   font-family: "Core Sans C";
+   src: url("../fonts/CoreSansC-75ExtraBold.woff2"), url("../fonts/CoreSansC-75ExtraBold.woff");
+   font-weight: 800;
+   font-style: normal;
+   font-display: swap;
+} */
+/* !=== CoreSansC 85Heavy === */
+ /* @font-face {
+   font-family: "Core Sans C";
+   src: url("../fonts/CoreSansC-85Heavy.woff2"), url("../fonts/CoreSansC-85Heavy.woff");
+   font-weight: 900;
+   font-style: normal;
+   font-display: swap;
+} */
+/* !=== Mintaka === */
+ /* @font-face {
+   font-family: "Mintaka";
+   src: url("../fonts/Mintaka.woff2"), url("../fonts/Mintaka.woff");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+} */
+/* !=== ******* === */
+/* @font-face {
+   font-family: "The Resto";
+   src: url("../fonts/TheResto-Regular.woff2"), url("../fonts/TheResto-Regular.woff");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+} */
