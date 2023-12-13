@@ -1,7 +1,7 @@
 @import "_start.scss";
 // =========================================== //
 [class*="__container"] {
-   max-width: 1250px;
+   max-width: 1130px;
    margin: 0 auto;
    padding: 100px 15px;
    display: flex;
@@ -31,7 +31,7 @@ $textcolor: #7d7d7d;
       display: grid;
       column-gap: 34px;
       row-gap: 58px;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
    }
 }
 .progect {
@@ -90,7 +90,6 @@ $textcolor: #7d7d7d;
    &__photo {
       overflow: clip;
       width: 100%;
-      cursor: pointer;
       transition: all 0.2s;
       @media (any-hover: hover) {
          &:hover {
@@ -125,10 +124,6 @@ $textcolor: #7d7d7d;
       display: flex;
       flex-direction: column;
       gap: 10px;
-      justify-content: space-between;
-      @media (max-width: 320px) {
-         gap: 1px;
-      }
    }
 
    // .item-project__title
@@ -140,10 +135,7 @@ $textcolor: #7d7d7d;
       font-weight: 600;
       line-height: 1.27;
       overflow: hidden;
-      cursor: pointer;
-      @media (max-width: 320px) {
-         line-height: 1;
-      }
+      position: relative;
       @media (any-hover: hover) {
          &:hover::after {
             transform: translate(0);
@@ -155,8 +147,8 @@ $textcolor: #7d7d7d;
          width: 100%;
          height: 2px;
          background-color: #37393f;
-         position: relative;
-         top: -13px;
+         position: absolute;
+         top: 22px;
          left: 0;
          transform: translate(-101%);
       }
@@ -185,7 +177,6 @@ $textcolor: #7d7d7d;
       justify-content: center;
       align-items: center;
       flex-shrink: 0;
-      cursor: pointer;
       transition: transform 0.3s;
       @media (max-width: 320px) {
          display: none;

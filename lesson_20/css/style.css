@@ -84,7 +84,7 @@ body {
 }
 
 [class*=__container] {
-  max-width: 1250px;
+  max-width: 1130px;
   margin: 0 auto;
   padding: 100px 15px;
   display: -webkit-box;
@@ -119,7 +119,7 @@ body {
      -moz-column-gap: 34px;
           column-gap: 34px;
   row-gap: 58px;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
 .titles-projects {
@@ -187,7 +187,6 @@ body {
 .item-project__photo {
   overflow: clip;
   width: 100%;
-  cursor: pointer;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -235,14 +234,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-@media (max-width: 320px) {
-  .item-project__content {
-    gap: 1px;
-  }
 }
 .item-project__title {
   color: #37393f;
@@ -251,12 +242,7 @@ body {
   font-weight: 600;
   line-height: 1.27;
   overflow: hidden;
-  cursor: pointer;
-}
-@media (max-width: 320px) {
-  .item-project__title {
-    line-height: 1;
-  }
+  position: relative;
 }
 @media (any-hover: hover) {
   .item-project__title:hover::after {
@@ -272,8 +258,8 @@ body {
   width: 100%;
   height: 2px;
   background-color: #37393f;
-  position: relative;
-  top: -13px;
+  position: absolute;
+  top: 22px;
   left: 0;
   -webkit-transform: translate(-101%);
       -ms-transform: translate(-101%);
@@ -308,7 +294,6 @@ body {
           align-items: center;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  cursor: pointer;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
