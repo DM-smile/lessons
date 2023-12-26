@@ -36,6 +36,7 @@ $colorTextTopSection: #fff;
 // =========================================== //
 
 .header {
+   display: none;
    // position: fixed;
    width: 100%;
    z-index: 10;
@@ -263,6 +264,7 @@ $colorTextTopSection: #fff;
 // =========================================== //
 
 .footer {
+   display: none;
    background-color: $bgFooter;
    color: $footerColorText;
    font-family: $caustenFont;
@@ -663,6 +665,7 @@ $colorTextTopSection: #fff;
 // =========================================== //
 
 .hero {
+   display: none;
    position: relative;
    color: $heroTextColor;
    margin-bottom: 130px;

@@ -145,6 +145,7 @@ body {
 }
 
 .header {
+  display: none;
   width: 100%;
   z-index: 10;
   background-color: #fff;
@@ -429,6 +430,7 @@ body {
 }
 
 .footer {
+  display: none;
   background-color: #3c4242;
   color: #f6f6f6;
   font-family: "Causten";
@@ -911,6 +913,7 @@ body {
 }
 
 .hero {
+  display: none;
   position: relative;
   color: #fff;
   margin-bottom: 130px;
