@@ -25,7 +25,7 @@ $colorTextTopSection: #fff;
 // =========================================== //
 
 [class*="__container"] {
-   max-width: 1270px;
+   width: 1270px;
    margin: 0 auto;
    padding: 0 15px;
    display: flex;
@@ -675,7 +675,6 @@ $colorTextTopSection: #fff;
       position: absolute;
       bottom: 49px;
       left: 50%;
-      transform: translateX(-50%);
       background-image: url("../img/main/hero/carousel-indicators.png");
       background-repeat: no-repeat;
       width: 126px;
@@ -829,22 +828,13 @@ $colorTextTopSection: #fff;
 // =========================================== //
 
 .top-section {
+   // .top-section__container
    color: $colorTextTopSection;
 
-   // .top-section__container
    &__container {
       display: flex;
       flex-direction: row;
       gap: 30px;
-      @media (max-width: 1100px) {
-         flex-direction: column;
-         padding: 0 50px;
-         gap: 50px;
-      }
-      @media (max-width: 700px) {
-         padding: 0 20px;
-         gap: 20px;
-      }
    }
 
    // .top-section__item
@@ -852,9 +842,6 @@ $colorTextTopSection: #fff;
    //? &__item {
    // }
 }
-
-// ! .card-top-section
-
 .card-top-section {
    position: relative;
    width: 100%;
@@ -864,7 +851,6 @@ $colorTextTopSection: #fff;
    justify-content: center;
    min-height: 356px;
    flex: 0 1 605px;
-   border-radius: 12px;
 
    // .card-top-section__background
 
@@ -876,26 +862,13 @@ $colorTextTopSection: #fff;
       object-position: right;
       z-index: -1;
       aspect-ratio: 605 / 356;
-      border-radius: 12px;
-      @media (max-width: 1100px) {
-         border-radius: 25px;
-      }
    }
 
    //! .card-top-section__body
 
    &__body {
-      padding: 0 30px;
+      padding-left: 30px;
       max-width: 294px;
-      @media (max-width: 1100px) {
-         text-shadow: 0 0 5px $colorBlack;
-         max-width: 450px;
-         height: auto;
-         display: flex;
-         flex-direction: column;
-         justify-content: space-around;
-         padding: 60px 30px;
-      }
    }
 
    // .card-top-section__label
@@ -907,10 +880,6 @@ $colorTextTopSection: #fff;
       line-height: 1.67;
       letter-spacing: 0.251px;
       margin-bottom: 24px;
-      @media (max-width: 1100px) {
-         margin-bottom: 0;
-         font-size: 40px;
-      }
    }
 
    // .card-top-section__title
@@ -920,10 +889,6 @@ $colorTextTopSection: #fff;
       font-weight: 800;
       line-height: 1.3;
       margin-bottom: 9px;
-      @media (max-width: 1100px) {
-         margin-bottom: 0;
-         font-size: 60px;
-      }
    }
 
    // .card-top-section__sub-title
@@ -935,10 +900,6 @@ $colorTextTopSection: #fff;
       line-height: 1.57;
       letter-spacing: 0.251px;
       margin-bottom: 21px;
-      @media (max-width: 1100px) {
-         margin-bottom: 0;
-         font-size: 30px;
-      }
    }
 
    // .card-top-section__link
@@ -948,9 +909,5 @@ $colorTextTopSection: #fff;
       font-weight: 800;
       line-height: 1.5;
       text-decoration-line: underline;
-      @media (max-width: 1100px) {
-         margin-bottom: 0;
-         font-size: 35px;
-      }
    }
 }
