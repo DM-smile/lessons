@@ -1,0 +1,13 @@
+@import "_fonts.scss";
+@import "_reset.scss";
+// =========================================== //
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.wrapper > main {
+   flex-grow: 1;
+}
+// =========================================== //
