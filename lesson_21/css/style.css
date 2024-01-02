@@ -1094,6 +1094,8 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 .card-saving-zone--first {
   -webkit-box-pack: start;
@@ -1294,7 +1296,7 @@ body {
 }
 .card-saving-zone__button--add {
   margin-bottom: 28.67px;
-  background: #3c4242;
+  background-color: #3c4242;
   border: none;
 }
 @media (max-width: 380px) {
@@ -2234,7 +2236,7 @@ body {
 }
 .footer__social-button {
   border-radius: 10.68px;
-  background: #f6f6f6;
+  background-color: #f6f6f6;
   width: 37.024px;
   height: 37.024px;
   -ms-flex-negative: 0;
