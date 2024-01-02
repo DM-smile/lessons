@@ -1352,6 +1352,18 @@ body {
           align-items: center;
   padding: 20px 74px;
 }
+.fashion__item--left {
+  border-radius: 12px 0 0 12px;
+}
+.fashion__item--left .fashion__background {
+  border-radius: 12px 0 0 12px;
+}
+.fashion__item--right {
+  border-radius: 0 12px 12px 0;
+}
+.fashion__item--right .fashion__background {
+  border-radius: 0 12px 12px 0;
+}
 @media (max-width: 1000px) {
   .fashion__item {
     border-radius: 12px;
