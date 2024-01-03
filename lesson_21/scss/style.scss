@@ -121,11 +121,10 @@ $grey: #afafaf;
 }
 
 .header {
-   // position: fixed;
+   position: sticky;
    width: 100%;
    z-index: 10;
-   // top: 0;
-   // left: 0;
+   top: 0;
 
    // .header__container
    background-color: $headerBg;
@@ -350,12 +349,10 @@ $grey: #afafaf;
 
 .hero {
    position: relative;
+   height: calc(100vh - 108px);
    color: $heroTextColor;
    &--mg {
       margin-bottom: 130px;
-   }
-   @media (min-width: 1000px) {
-      height: calc(100vh - 108px);
    }
    &::after {
       content: "";
@@ -388,7 +385,7 @@ $grey: #afafaf;
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: top;
+      object-position: 75% top;
       position: absolute;
       top: 0;
       left: 0;
@@ -892,6 +889,7 @@ $grey: #afafaf;
    border-radius: 12px;
    display: flex;
    justify-content: flex-end;
+   transition: all 0.2s;
    &--first {
       justify-content: flex-start;
    }
@@ -1056,7 +1054,7 @@ $grey: #afafaf;
       }
       &--add {
          margin-bottom: 28.67px;
-         background: $colorTextLimelight;
+         background-color: $colorTextLimelight;
          border: none;
          @media (max-width: 380px) {
             color: $white !important;
@@ -1109,6 +1107,18 @@ $grey: #afafaf;
       justify-content: center;
       align-items: center;
       padding: 20px 74px;
+      &--left{
+         border-radius: 12px 0 0 12px;
+         & .fashion__background{
+            border-radius: 12px 0 0 12px;
+         }
+      }
+      &--right{
+         border-radius: 0 12px 12px 0;
+         & .fashion__background{
+            border-radius: 0 12px 12px 0;
+         }
+      }
       @media (max-width: 1000px) {
          border-radius: 12px;
          & .fashion__background {
@@ -1210,7 +1220,7 @@ $grey: #afafaf;
          font-size: 24px;
          transform: translateX(-96.67px);
          min-width: 194px;
-         @include hover{
+         @include hover {
             transform: translateX(-96.67px) scale(1.1);
          }
       }
@@ -1919,7 +1929,7 @@ $grey: #afafaf;
 
    &__social-button {
       border-radius: 10.68px;
-      background: #f6f6f6;
+      background-color: $footerColorText;
       width: 37.024px;
       height: 37.024px;
       flex-shrink: 0;
