@@ -1,0 +1,43 @@
+body{
+   text-align: center;
+   padding-top: 5%;
+   background-color: transparent;
+}
+img{
+   width: 50%;
+}
+.active{
+   background-color: yellow;
+}
+.loaded{
+   background-color: #fff;
+}
+button:nth-child(3){
+   margin-bottom: 100px;
+}
+.header, .footer{
+   font-size: 80px;
+   background-color: green;
+   &:not(:last-child){
+      margin-bottom: 30px;
+   }
+}
+.task-4{
+   font-size: 60px;
+}
+.item-new{
+   font-size: 80px;
+   background-color: green;
+}
+.header{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+}
+.footer{
+   position: fixed;
+   bottom: -31px;
+   left: 0;
+   width: 100%;
+}
