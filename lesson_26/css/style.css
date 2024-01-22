@@ -24,9 +24,6 @@ button:nth-child(3) {
   font-size: 80px;
   background-color: green;
 }
-.header:not(:last-child), .footer:not(:last-child) {
-  margin-bottom: 30px;
-}
 
 .task-4 {
   font-size: 60px;
@@ -46,7 +43,7 @@ button:nth-child(3) {
 
 .footer {
   position: fixed;
-  bottom: -31px;
+  bottom: -1px;
   left: 0;
   width: 100%;
 }
