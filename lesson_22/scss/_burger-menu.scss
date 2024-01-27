@@ -1,0 +1,109 @@
+.bottom-section-header {
+   &__navigation {
+      @media (max-width: toRem(991)) {
+         position: fixed;
+         width: 40%;
+         height: 100vh;
+         bottom: 100%;
+         right: 0;
+         z-index: -1;
+         background-color: #37393f;
+         flex-direction: column;
+         color: #fff;
+         gap: toRem(40);
+         @include adaptiveValue(font-size, 60, 30, 0, 991, 320);
+         padding-top: toRem(230);
+         padding-bottom: toRem(100);
+         justify-content: flex-start;
+         flex-wrap: nowrap;
+         overflow: auto;
+         transition:
+            bottom 0.3s,
+            width 0.3s 0.3s;
+      }
+   }
+
+   &__wrapper-sub-menu {
+      @media (max-width: toRem(991)) {
+         display: none;
+      }
+   }
+   &__link {
+      @media (max-width: toRem(991)) {
+         & span {
+            @include smooth-underline-white;
+         }
+      }
+   }
+}
+
+// ! icon-menu
+.icon-menu {
+   display: none;
+   flex: 0 0 toRem(40);
+   z-index: 5;
+   cursor: pointer;
+   position: relative;
+   height: 50%;
+   @media (max-width: toRem(991)) {
+      display: block;
+   }
+   &::before,
+   &::after,
+   & span {
+      content: "";
+      position: absolute;
+      height: toRem(2);
+      width: 100%;
+      background-color: #000;
+      transition: all 0.2s;
+   }
+   &::before {
+      top: 0;
+   }
+   &::after {
+      bottom: 0;
+   }
+   & span {
+      top: 50%;
+      margin-top: toRem(-1);
+   }
+}
+
+//! click button
+.menu-open {
+   overflow: hidden;
+   // padding-right: toRem(15);
+   .bottom-section-header {
+      &__navigation {
+         bottom: 0;
+         overflow-y: scroll;
+         width: calc(60% + toRem(15));
+         @media (max-width: toRem(768)) {
+            width: 100%;
+         }
+      }
+   }
+   .icon-menu {
+      & span {
+         transform: scale(0);
+      }
+      &::before {
+         transform: rotate(135deg);
+         top: 50%;
+         margin-top: toRem(-1);
+      }
+      &::after {
+         transform: rotate(-135deg);
+         bottom: 50%;
+         margin-bottom: toRem(-1);
+      }
+   }
+   // зсування елементів при бургері
+   .hero__background,
+   .bottom-footer__body,
+   .middle-footer__content,
+   .bottom-section-header {
+      padding-right: toRem(15);
+   }
+}
