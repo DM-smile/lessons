@@ -999,6 +999,9 @@ body {
   margin-top: -0.0625rem;
 }
 
+.menu-open {
+  overflow: hidden;
+}
 .menu-open .bottom-section-header__navigation {
   bottom: 0;
   overflow-y: scroll;
