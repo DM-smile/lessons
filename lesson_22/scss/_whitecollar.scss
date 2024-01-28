@@ -107,7 +107,7 @@
       @include adaptiveValue(font-size, 20, 16, 0, 768, 425);
       font-weight: 600;
       font-style: normal;
-      @media (max-width: toRem(425)){
+      @media (max-width: toRem(425)) {
          font-size: toRem(18);
       }
    }
@@ -117,7 +117,7 @@
    &__contact {
       font-style: normal;
       @include adaptiveValue(font-size, 18, 14, 0, 768, 425);
-      @media (max-width: toRem(425)){
+      @media (max-width: toRem(425)) {
          font-size: toRem(16);
       }
    }
@@ -126,7 +126,6 @@
 .footer-middle-section {
 }
 .middle-footer {
-   
    //! .middle-footer__content
 
    &__content {
@@ -140,7 +139,7 @@
       @media (max-width: toRem(1024)) {
          justify-content: space-evenly;
       }
-      @media (max-width: toRem(375)){
+      @media (max-width: toRem(375)) {
          display: block;
       }
    }
@@ -193,7 +192,6 @@
    }
 }
 .form-footer {
-
    //! .form-footer__body
 
    &__body {
@@ -203,7 +201,6 @@
       @include adaptiveValue(padding-bottom, 42, 10, 0, 768, 320);
       @include adaptiveValue(padding-left, 36, 5, 0, 768, 320);
       @include adaptiveValue(padding-right, 36, 5, 0, 768, 320);
-      
    }
 
    // .form-footer__title
@@ -241,7 +238,6 @@
       @include adaptiveValue(padding-bottom, 22, 10, 0, 768, 320);
       @include adaptiveValue(padding-left, 18, 8, 0, 768, 320);
       @include adaptiveValue(padding-right, 18, 8, 0, 768, 320);
-      border-radius: 0;
       :focus {
          outline: 2px solid #6b77e5;
       }

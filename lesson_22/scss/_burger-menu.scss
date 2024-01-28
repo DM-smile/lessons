@@ -72,7 +72,7 @@
 
 //! click button
 .menu-open {
-   overflow: hidden;
+   // overflow: hidden;
    // padding-right: toRem(15);
    .bottom-section-header {
       &__navigation {
@@ -100,10 +100,10 @@
       }
    }
    // зсування елементів при бургері
-   .hero__background,
-   .bottom-footer__body,
-   .middle-footer__content,
-   .bottom-section-header {
-      padding-right: toRem(15);
-   }
+   // .hero__background,
+   // .bottom-footer__body,
+   // .middle-footer__content,
+   // .bottom-section-header {
+   //    padding-right: toRem(15);
+   // }
 }
