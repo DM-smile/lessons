@@ -5,6 +5,9 @@
    @media (max-width: toRem(991)) {
       min-height: 100vh;
    }
+   &--mg {
+      // margin-bottom: toRem(151);
+   }
 
    // hero__background
 
@@ -26,14 +29,20 @@
    }
 
    // .hero__content
-
    &__content {
       display: flex;
       flex-direction: column;
       justify-content: center;
       background-color: rgba(55, 57, 63, 0.91);
       // flex-basis: toRem(828);
-      @include adaptiveValue("flex-basis", 828, 400, 0, 1920, 768);
+      // flex-basis: 43,125%;
+      @include adaptiveValue("flex-basis", 1485, 828, 0, 3250, 1920);
+      @media (max-width: toRem(1920)) {
+         @include adaptiveValue("flex-basis", 823, 255, 0, 1920, 768);
+      }
+      @media (max-width: toRem(1248)) {
+         @include adaptiveValue("flex-basis", 491.66, 415, 0, 1248, 991);
+      }
       @include adaptiveValue("padding-left", 117, 10, 0, 1920, 768);
       @include adaptiveValue("padding-right", 117, 10, 0, 1920, 768);
       padding-top: 5%;

@@ -27,6 +27,27 @@
    }
 }
 
+@mixin smooth-underline-left-blue {
+   position: relative;
+   &::after {
+      content: "";
+      transition: all 0.2s;
+      width: 0%;
+      height: toRem(2);
+      background-color: rgb(107, 119, 229);
+      position: absolute;
+      left: 0;
+      bottom: toRem(-3);
+   }
+   @media (any-hover: hover) {
+      &:hover {
+         &::after {
+            width: 100%;
+         }
+      }
+   }
+}
+
 @mixin smooth-underline-white {
    position: relative;
    &::after {

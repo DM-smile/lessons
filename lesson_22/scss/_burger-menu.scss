@@ -1,3 +1,4 @@
+// ! burger
 .bottom-section-header {
    &__navigation {
       @media (max-width: toRem(991)) {
@@ -20,6 +21,9 @@
          transition:
             bottom 0.3s,
             width 0.3s 0.3s;
+      }
+      @media (max-width: toRem(425)) {
+         width: 100%;
       }
    }
 
@@ -72,12 +76,12 @@
 
 //! click button
 .menu-open {
-   // overflow: hidden;
+   overflow: hidden;
    // padding-right: toRem(15);
    .bottom-section-header {
       &__navigation {
          bottom: 0;
-         overflow-y: scroll;
+         overflow-y: auto;
          width: calc(60% + toRem(15));
          @media (max-width: toRem(768)) {
             width: 100%;
@@ -99,11 +103,4 @@
          margin-bottom: toRem(-1);
       }
    }
-   // зсування елементів при бургері
-   // .hero__background,
-   // .bottom-footer__body,
-   // .middle-footer__content,
-   // .bottom-section-header {
-   //    padding-right: toRem(15);
-   // }
 }

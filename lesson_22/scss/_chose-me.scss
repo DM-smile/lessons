@@ -1,0 +1,251 @@
+//! chose-me
+
+.chose-me {
+   position: relative;
+   &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -10;
+      background-color: rgb(55, 57, 63);
+      @media (max-width: toRem(991)) {
+         background-color: none;
+      }
+   }
+
+   &--mg {
+      margin-bottom: toRem(132);
+      @include adaptiveValue("margin-bottom", 132, 50, 0, 991, 320);
+   }
+
+   // .chose-me__container
+
+   &__container {
+      flex-direction: row;
+      align-items: center;
+      // justify-content: center;
+      @media (max-width: toRem(991)) {
+         flex-direction: column;
+      }
+   }
+
+   // .chose-me__content
+
+   &__content {
+      display: flex;
+      flex-direction: column;
+      row-gap: toRem(36);
+      max-width: toRem(610);
+      min-height: 741px;
+      justify-content: center;
+      z-index: 5;
+      padding: toRem(10) 0;
+      &::before {
+         content: "";
+         width: toRem(1000);
+         @media (max-width: toRem(1920)) {
+            @include adaptiveValue("width", 1050, 640, 0, 1920, 991);
+         }
+         height: 100%;
+         position: absolute;
+         top: 0;
+         left: 0;
+         background-color: rgb(55, 57, 63);
+         @media (max-width: toRem(991)) {
+            display: none;
+         }
+      }
+   }
+
+   // .chose-me__text
+
+   &__text {
+      display: flex;
+      flex-direction: column;
+      row-gap: toRem(13);
+      max-width: toRem(572);
+      z-index: 1;
+      & p {
+         line-height: 1.46;
+         @include adaptiveValue("font-size", 18, 14, 0, 1920, 320);
+      }
+   }
+
+   // .chose-me__label
+
+   &__label {
+      font-weight: 500;
+      line-height: 1.22; /* 22/18 */
+      @include icon-square-green;
+      max-width: toRem(370);
+      @include adaptiveValue("font-size", 18, 16, 0, 1920, 320);
+   }
+
+   // .chose-me__title
+
+   &__title {
+      font-family: "Poppins";
+      // font-size: toRem(30);
+      @include adaptiveValue("font-size", 30, 24, 0, 1920, 320);
+      font-weight: 600;
+      line-height: 1.21;
+      max-width: toRem(370);
+   }
+
+   // .chose-me__background
+
+   &__background {
+      position: absolute;
+      right: 0;
+      top: 0;
+      max-width: 868px;
+      z-index: -1;
+      @media (max-width: toRem(991)) {
+         position: static;
+      }
+      & img {
+         width: 100%;
+         height: 100%;
+         aspect-ratio: 868 / 741;
+         object-fit: contain;
+      }
+   }
+}
+.counter {
+   display: flex;
+   z-index: 1;
+   justify-content: center;
+   align-items: center;
+   gap: toRem(15);
+   flex-wrap: wrap;
+   @media (max-width: toRem(425)) {
+      flex-direction: column;
+   }
+
+   // .counter__item
+
+   &__item {
+      // padding: toRem(27) toRem(30);
+      @include adaptiveValue("padding-top", 27, 14, 0, 1920, 768);
+      @include adaptiveValue("padding-bottom", 27, 14, 0, 1920, 768);
+      @include adaptiveValue("padding-left", 30, 20, 0, 1920, 768);
+      @include adaptiveValue("padding-right", 30, 20, 0, 1920, 768);
+      background-color: #2e2f34;
+      width: toRem(287);
+      @media (max-width: toRem(425)) {
+         width: 100%;
+      }
+   }
+
+   // .counter__body-item
+
+   &__body-item {
+      display: flex;
+      flex-direction: row;
+      column-gap: toRem(12);
+   }
+
+   // .counter__icon
+
+   &__icon {
+      border-radius: 50%;
+      max-width: toRem(79.3);
+      flex-shrink: 0;
+      // flex-basis: toRem(79.3);
+      @include adaptiveValue("flex-basis", 79.3, 50, 0, 1920, 768);
+      @include adaptiveValue("font-size", 18, 16, 0, 1920, 768);
+      & img {
+         width: 100%;
+         height: 100%;
+         border-radius: 50%;
+         object-fit: contain;
+         aspect-ratio: 1 / 1;
+      }
+   }
+
+   // .counter__text
+
+   &__text {
+      display: flex;
+      flex-direction: column;
+      row-gap: toRem(1);
+      justify-content: center;
+   }
+
+   // .counter__label-top
+
+   &__label-top {
+      line-height: 1.46;
+      @include adaptiveValue("font-size", 16, 14, 0, 1920, 768);
+   }
+
+   // .counter__label-bottom
+
+   &__label-bottom {
+      font-family: "Poppins";
+      font-weight: 600;
+      line-height: 1.5; /* 27/18 */
+      @include adaptiveValue("font-size", 18, 16, 0, 1920, 768);
+   }
+}
+.points {
+   display: flex;
+   row-gap: toRem(37);
+   column-gap: toRem(23);
+   flex-wrap: wrap;
+   z-index: 1;
+
+   // .points__item
+
+   &__item {
+      font-family: "Poppins";
+      font-size: toRem(20);
+      flex-basis: toRem(274);
+      flex-grow: 1;
+      line-height: 1.5; /* 30/20 */
+      width: 100%;
+      &:not(:last-child) {
+         @include iconGreenCheck;
+      }
+      & span {
+         font-weight: 700;
+         &.yellow {
+            color: #ffb342;
+            font-weight: 400;
+            &.first::after {
+               content: "";
+               background-image: url("../img/icons/consulting/star.svg");
+               width: toRem(17);
+               height: toRem(17);
+               background-repeat: no-repeat;
+               background-position: toRem(3) toRem(3);
+            }
+         }
+      }
+   }
+
+   // .points__link
+   &__link {
+      color: #40ddb6;
+      font-weight: 600;
+      line-height: 1.22; /* 22/18 */
+      text-transform: capitalize;
+      position: relative;
+      transition: all 0.2s;
+      @include after {
+         position: absolute;
+         bottom: toRem(-2);
+         left: 0;
+         width: 100%;
+         height: toRem(2);
+         background-color: #40ddb6;
+      }
+      @include hover {
+         transform: scale(1.05);
+         color: #ffb342;
+      }
+   }
+}

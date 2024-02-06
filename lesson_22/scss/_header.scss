@@ -1,11 +1,13 @@
 // ! header
 .header {
    position: sticky;
-   top: toRem(0);
+   top: toRem(-64.97);
    z-index: 10;
    width: 100%;
+   border-bottom: toRem(1) solid rgb(125, 125, 125);;
    @media (max-width: toRem(991)) {
       position: fixed;
+      top: 0;
    }
 
    // .header__container
