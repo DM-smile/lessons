@@ -11,9 +11,6 @@
       left: 0;
       z-index: -10;
       background-color: rgb(55, 57, 63);
-      @media (max-width: toRem(991)) {
-         background-color: none;
-      }
    }
 
    &--mg {

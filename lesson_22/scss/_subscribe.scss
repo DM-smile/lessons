@@ -64,7 +64,7 @@
    &__label {
       @include icon-square-violet-small;
       font-weight: 500;
-      line-height: 1.1.7; /* 22/188 */
+      line-height: 1.17; /* 22/188 */
       margin-bottom: toRem(26);
       @include adaptiveValue("font-size", 18, 14, 0, 991, 320);
    }
@@ -76,7 +76,6 @@
       font-size: toRem(40);
       font-weight: 700;
       line-height: 1.5; /* 60/40 */
-      letter-spacing: 0%;
       text-align: center;
       margin-bottom: toRem(10);
       @include adaptiveValue("font-size", 40, 28, 0, 991, 320);
