@@ -1,0 +1,215 @@
+// ! header
+.header {
+   position: sticky;
+   top: toRem(-64.97);
+   z-index: 10;
+   width: 100%;
+   border-bottom: toRem(1) solid rgb(125, 125, 125);;
+   @media (max-width: toRem(991)) {
+      position: fixed;
+      top: 0;
+   }
+
+   // .header__container
+
+   &__container {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+      @include adaptiveValue("column-gap", 30, 10, 0, 991, 900);
+      &--bottom {
+         column-gap: toRem(10);
+         @media (max-width: toRem(991)) {
+            // padding: 0 toRem(40);
+            @include adaptiveValue(padding-left, 40, 5, 0, 991, 320);
+            @include adaptiveValue(padding-right, 40, 5, 0, 991, 320);
+         }
+      }
+   }
+
+   // .header__top-section
+
+   //  &__top-section {}
+
+   // .header__bottom-section
+
+   // ? &__bottom-section {}
+}
+.top-section-header {
+   background-color: #37393f;
+   padding: toRem(21.54) 0 toRem(21.46);
+   @media (max-width: toRem(991)) {
+      display: none;
+   }
+   & span {
+      font-size: toRem(14);
+      font-weight: 400;
+   }
+   & img {
+      max-width: toRem(20.2);
+      aspect-ratio: 20.2 / 22;
+      object-fit: contain;
+   }
+   //! .top-section-header__left-part
+
+   &__left-part {
+      display: flex;
+      @include adaptiveValue("gap", 50, 10, 0, 991, 900);
+      & a {
+         & span {
+            @include smooth-underline-left;
+            font-style: normal;
+            &::after {
+               background-color: #fff;
+               height: toEm(1, 14);
+            }
+         }
+      }
+   }
+
+   //! .top-section-header__item
+
+   &__item {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: toEm(10, 18);
+      & span {
+         // flex-shrink: 0;
+      }
+   }
+
+   //! .top-section-header__right-part
+
+   &__right-part {
+      display: flex;
+      @include adaptiveValue("gap", 50, 10, 0, 991, 900);
+   }
+}
+
+// ! .bottom-section-header
+
+.bottom-section-header {
+   background-color: #fff;
+   width: 100%;
+   // padding: toEm(33, 18) 0;
+   @include adaptiveValue("padding-top", 33, 5, 0, 991, 768);
+   @include adaptiveValue("padding-bottom", 33, 5, 0, 991, 768);
+   position: relative;
+
+   // ! .bottom-section-header__content
+
+   &__content {
+      display: flex;
+      // gap: toEm(40, 18);
+      justify-content: flex-end;
+      @include adaptiveValue("gap", 40, 5, 0, 1920, 768);
+      width: 100%;
+      @media (max-width: toRem(530)) {
+         min-height: 61px;
+      }
+   }
+
+   //! .bottom-section-header__navigation
+
+   &__navigation {
+      display: flex;
+      color: #37393f;
+      justify-content: center;
+      align-items: center;
+      font-weight: 400;
+      // column-gap: toEm(43, 18);
+      // row-gap: toEm(10, 18);
+      @include adaptiveValue("column-gap", 43, 10, 0, 1440, 768);
+      @include adaptiveValue("row-gap", 10, 3, 0, 1440, 768);
+      width: 100%;
+      flex-wrap: wrap;
+   }
+
+   //! .bottom-section-header__link
+
+   &__link {
+      flex-shrink: 1;
+      @include not-last-child {
+      }
+      &--menu {
+         display: flex;
+         align-items: center;
+         gap: toEm(7, 18);
+         @include hover {
+            & ~ div {
+               display: block;
+            }
+         }
+      }
+      & span {
+         @include smooth-underline-left;
+      }
+      & img {
+         width: toRem(16);
+         height: toRem(8);
+         object-fit: contain;
+      }
+   }
+
+   &__wrapper-sub-menu {
+      position: relative;
+   }
+
+   // .bottom-section-header__sub-menu-box
+
+   &__sub-menu-box {
+      position: absolute;
+      left: toRem(-40);
+      z-index: 10;
+      color: #fff;
+      padding: toRem(30) toRem(10);
+      width: toRem(170);
+      font-size: toRem(24);
+      transition: all 0.3s;
+      opacity: 0;
+      display: none;
+      top: toRem(-50);
+      // background-color: rgba(55, 57, 63, 0.91); //загальний фон менюшки
+      @include hover {
+         cursor: pointer;
+         opacity: 1;
+         display: block;
+         top: 0;
+      }
+   }
+
+   // .bottom-section-header__sub-menu-content
+
+   &__sub-menu-content {
+      background-color: rgba(55, 57, 63, 0.91);
+      padding: toRem(20) toRem(10);
+      // border-radius: toRem(10);
+      & li {
+         &:not(:last-child) {
+            margin-bottom: toRem(8);
+         }
+         & span {
+            @include smooth-underline-white;
+         }
+      }
+   }
+
+   // bottom-section-header__buttons
+
+   &__buttons {
+      display: flex;
+      align-items: center;
+      flex-basis: toRem(185);
+      flex-shrink: 0;
+      justify-content: flex-end;
+      @media (max-width: toRem(991)) {
+         justify-content: space-between;
+         flex-basis: toRem(260);
+      }
+      @media (max-width: toRem(530)) {
+            flex-basis: toRem(40);
+         }
+   }
+}

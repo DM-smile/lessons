@@ -1,0 +1,132 @@
+//! hero
+.hero {
+   position: relative;
+   min-height: calc(100vh - toRem(191.97));
+   @media (max-width: toRem(991)) {
+      min-height: 100vh;
+   }
+   &--mg {
+      // margin-bottom: toRem(151);
+   }
+
+   // hero__background
+
+   &__background {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+   }
+
+   // .hero__body
+
+   &__body {
+      display: flex;
+      justify-content: flex-start;
+   }
+
+   // .hero__content
+   &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: rgba(55, 57, 63, 0.91);
+      // flex-basis: toRem(828);
+      // flex-basis: 43,125%;
+      @include adaptiveValue("flex-basis", 1485, 828, 0, 3250, 1920);
+      @media (max-width: toRem(1920)) {
+         @include adaptiveValue("flex-basis", 823, 255, 0, 1920, 768);
+      }
+      @media (max-width: toRem(1248)) {
+         @include adaptiveValue("flex-basis", 491.66, 415, 0, 1248, 991);
+      }
+      @include adaptiveValue("padding-left", 117, 10, 0, 1920, 768);
+      @include adaptiveValue("padding-right", 117, 10, 0, 1920, 768);
+      padding-top: 5%;
+      padding-bottom: 5%;
+      min-height: calc(100vh - toRem(191.97));
+      @media (max-width: toRem(991)) {
+         min-height: 100vh;
+      }
+      @media (max-width: toRem(768)) {
+         flex-basis: 100%;
+         background-color: rgba(55, 57, 63, 0.732);
+         align-items: center;
+      }
+   }
+
+   // .hero__label
+
+   &__label {
+      font-weight: 600;
+      line-height: 1.46;
+      max-width: toRem(529);
+      &:not(:last-child) {
+         margin-bottom: toEm(10, 18);
+      }
+      @media (max-width: toRem(768)) {
+         text-align: center;
+      }
+   }
+
+   // .hero__title
+
+   &__title {
+      font-family: "Poppins";
+      font-size: toRem(60);
+      font-weight: 700;
+      line-height: 1.1;
+      max-width: toRem(529);
+      @include adaptiveValue("font-size", 60, 40, 0, 1920, 768);
+      &:not(:last-child) {
+         margin-bottom: toEm(20, 60);
+      }
+      & span {
+         color: #40ddb6;
+      }
+      @media (max-width: toRem(768)) {
+         text-align: center;
+         max-width: 90%;
+      }
+      @media (max-width: toRem(425)) {
+         @include adaptiveValue("font-size", 40, 30, 0, 425, 120);
+      }
+   }
+
+   // .hero__text
+
+   &__text {
+      color: #b9b9b9;
+      font-weight: 500;
+      line-height: 1.46;
+      max-width: toRem(482);
+      &:not(:last-child) {
+         margin-bottom: toEm(35, 18);
+      }
+      & p {
+         text-align: center;
+         &:not(:last-child) {
+            margin-bottom: toRem(5);
+         }
+      }
+   }
+
+   // .hero__buttons
+
+   &__buttons {
+      display: flex;
+      @include adaptiveValue("gap", 30, 10, 0, 1920, 768);
+      @include adaptiveValue("font-size", 18, 14, 0, 1920, 768);
+      @media (max-width: toRem(768)) {
+         flex-direction: column;
+         gap: toRem(40);
+         font-size: toRem(18);
+      }
+      & a {
+         justify-content: center;
+      }
+   }
+}
